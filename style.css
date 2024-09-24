@@ -1,0 +1,24 @@
+
+html{
+    background-color: #fff;
+}
+
+.logo{
+    color:rgb(0, 128, 0);
+}
+.red,h3{
+    color:rgb(255, 0, 0);
+}
+.italique{
+    color:rgb(0, 0, 255);
+}
+h2{
+    text-transform: capitalize;
+}
+.en-tête{
+    text-align: center;
+    font-size: 5rem;
+}
+body{
+    text-align: justify;
+}
