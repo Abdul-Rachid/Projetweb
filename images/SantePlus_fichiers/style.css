@@ -14,112 +14,44 @@ body{
     padding: 0;
 }
 
-/* Style pour un ordinateur portable */
-@media (max-width: 2000px) {
-    body {
-        font-size: 1rem;
-    }
-    .image {
-        width: 30%;
-    }
-    .vector-header-start {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-    }
-    .menu-label {
-        width: 80%;
-    }
-    .humberger {
-        width: 100%;
-    }
-    .image-logo {
-        width: 45%;
-        padding-left: 0.5em;
-    }
-    .logo-text  {
-        width: 150%;
-        font-size: 200%;
-        font-weight: 700;
-        padding-left: 0.3em;
-        padding-right: 0.3em;
-    }
-}
-
 /* Style pour les tablettes */
-@media (max-width: 950px) {
-    body {
-        font-size: 1rem;
-    }
-    .image {
-        width: 35%;
-    }
-    .vector-header-start {
-        display: flex;
-        align-items: center;
-        margin: 5px;
-    }
-    .menu-label {
-        width: 75%;
-    }
-    .humberger {
-        width: 100%;
-    }
-    .logo-text  {
-        width: 150%;
-        font-size: 190%;
-        font-weight: 600;
-        padding-left: 0.3em;
-        padding-right: 0.3em;
-    }
-    
-}
-
-/* Style pour les smartphones */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     body {
         font-size: 0.875rem;
     }
-    .vector-header-start {
-        display: flex;
-        align-items: center;
-        margin: 0;
+}
 
+/* Style pour les smartphones */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.75rem;
     }
-    .image {
-        width: 40%;
-    }
-    .menu-label {
-        width: 70%;
-    }
-    .humberger{
-        width: 100%;
-    }
-    .image-logo {
-        width: 30%;
-    }
-    .logo-text  {
-        width: 90%;
-        font-size: 180%;
-        font-weight: 600;
-        padding-left: 0.3em;
-        padding-right: 0.3em;
-    }
-    
 }
 
 /* Style sur l'en-tête */
 .vector-header-container {
     width: 100%;
-    display: grid;
-    justify-content: left;
-    background-color:#e5e8e8;
+    display: flex;
+    justify-content: center;
 }
 
 /* Style sur mw-header */
 .vector-header-container .mw-header {
-    margin: 10px;
+    width: 100%;
+    min-height: 3.125rem;
+    background-color: var(--background-color-base,#fff);
+    min-width: 18.75em;
+    max-width: 99.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     box-sizing: border-box;
+}
+
+/* Style sur header-start */
+.mw-header .vector-header-start {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 /* Style sur le corps textuel */
@@ -145,13 +77,11 @@ h1{
     border: 3px solid #efc7c7;
 }
 
-
 /* Style pour le menu */
-.dropdown-menu {
-    width: 12%;
-}
 .vector-dropdown {
-    width: 94%;
+    margin: 0.5rem;
+    margin-left: -1rem;
+
 }
 
 .vector-dropdown .vector-dropdown-checkbox {
@@ -159,7 +89,7 @@ h1{
     position: absolute;
     z-index: 1;
     opacity: 1;
-    display: none;
+   display: none;
 }
 
 
@@ -169,8 +99,12 @@ h1{
     border-radius: 4px;
     transition: background-color 0.3s;
     display: inline-block;
+    border: 1px solid #514e4e;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
     margin: 0.3em;
     text-decoration: none;
+    height: 2.2rem;
 }
 
 /* Changement de couleur au survol du label */
@@ -185,12 +119,14 @@ h1{
     overflow: hidden auto;
     position: absolute;
     z-index: 50;
-    background-color: #b7b6bd;
+    background-color: #f4f4f4;
     font-size: 1rem;
     box-shadow: 0 2px 6px -1px rgba(0,0,0,10);
     transition-property: opacity;
     transition-duration: 100ms;
     max-width: 15.625rem;
+    max-height: 23rem;
+    margin-left: 8px;
 }
 
 /* Style pour la liste du menu */
@@ -237,14 +173,20 @@ h1{
     align-items: center;
 }
 
+/* Style sur Santé Plus */
+.logo-text {
+    font-size: 2.11rem;
+    font-weight: 900;
+}
+
 /* Style pour pieds de la page */
 .footers {
-    background-color: #e5e8e8;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #b8b1b1;
+    width: max-content;
     height: 15rem;
 }
 
-/* Transparence en arrière plan */
-.body_container {
-    color: black;
-    opacity: 0.5;
-}
+

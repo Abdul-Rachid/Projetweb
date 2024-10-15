@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    
     <meta name="description" content="Un site web sur la santé pour le bien-être de tous.">
-    <link rel="icon" href="images/icon_32x36.png" type="image/x-icon">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SantePlus</title>
-</head>
+<link rel="stylesheet" href="SantePlus_fichiers/style.css" type="text/css"><link rel="icon" href="http://127.0.0.1:5500/images/icon_32x36.png" type="image/x-icon"></head>
 <body> 
     <div class="vector-header-container">
         <header class="vector-header mw-header">
             <div class="vector-header-start">
                 <nav class="dropdown-menu" aria-label="Site">
                     <div class="vector-dropdown">
-                        <input type="checkbox" id="menu-toggle" role="button" aria-haspopup="true" 
-                        aria-expanded="false" aria-controls="menu-items" class="vector-dropdown-checkbox" aria-label="Menu principal">
-                        <label class="menu-label" for="menu-toggle" onclick="showOverlay" aria-haspopup="true" aria-hidden="true">
-                            <img class="humberger" src="images/menu_lateral_44x44.png" alt="menu-lateral">
+                        <input type="checkbox" id="menu-toggle" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-items" class="vector-dropdown-checkbox" aria-label="Menu principal" checked="checked">
+                        <label for="menu-toggle" class="menu-label" aria-haspopup="true" aria-hidden="true">
+                            <img src="SantePlus_fichiers/menu_lateral_44x44.png" alt="menu-lateral" style="width: 150; height: 2.18rem;">
                         </label>
-                        <div id="menu-content" class="vector-menu-content">
+                        <div class="vector-menu-content">
                             <ul id="menu-items" class="vector-menu-content-list" role="menu" aria-hidden="true">
                                 <li role="menuitem" class="mw-list-item"><a href="#mal_car">les maladies cardiovasculaires</a></li>
                                 <li role="menuitem" class="mw-list-item"><a href="#inf_res">les infections respiratoires</a></li>
@@ -37,27 +36,21 @@
                         </div>
                     </div>
                 </nav>
-                <script>
-                    
-                    function showOverlay() {
-                        let body_container = document.getElementById('body-container');
-                        body_container.style.opacity = '0.5';
-                    }
-                </script>
+                <!-- <script src="script.js"></script> -->
                 <div class="mw-logo">
-                    <img class="image-logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
+                    <img src="SantePlus_fichiers/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
                     <span class="logo-text">Santé PLUS</span>
-                    <img class="image-logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
+                    <img src="SantePlus_fichiers/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
                 </div>
             </div>
         </header>
     </div>
 
-    <div id="body_container"  class="vector-body-container">
+    <div class="vector-body-container">
         <h1>QUELQUES MALADIES COURANTES DANS LE MONDE !</h1>
         <div>
-            <a href="images/perfusion.png"><img class="image"  src="images/perfusion_300x300.png" alt="" style="float: left; margin: 0 10px 0 0;"
-             title="Cliquer pour agrandir"></a>
+            <a href="http://127.0.0.1:5500/images/perfusion.png"><img src="SantePlus_fichiers/perfusion_300x300.png" alt="" style="float: left; margin: 0 10px 10px 0; 
+            width: 1062%; height: 10.625rem;" title="Cliquer pour agrandir"></a>
             <p>On constate avec regret de nombreuses maladies qui évoluent en se camouflant dans l'organisme comme une bombe à retardement 
             telles que <a href="#mal_car">les maladies cardiovasculaires</a>, <a href="#inf_res">les infections respiratoires</a>, 
             <a href="#can">les cancers</a>, <a href="#dia">le diabète</a>, <a href="#mal_inf">les maladies infectieuses</a>, 
@@ -73,61 +66,92 @@
         l'une des principales causes de décès dans le monde.<strong> Selon les données de l'OMS, les maladies cardiovasculaires
         sont responsables de près de 18 millions de décès chaque année. Soit environ 32% de l'ensemble des décès dans le monde, 
         parmis ces décès environ 85% sont dus à des crises cardiaques et des accidents vasculaires célébraux (AVC)</strong>
-        <a href="images/avc.jpg"><img class="image" src="images/avc_400x300.png" alt="image" style="float: right; margin: 10px 0 0 10px;" 
-        title="Cliquer pour agrandir"></a>. 
-        Ce groupe de maladie comprend des affections telles que les crises cardiaques, les accidents vasculaires célébraux (AVC), 
-        l'hypertension, ainsi que des maladies des artères coronaires et les arythmies. <br><span class="red">Les facteurs de risques</span> 
-        souvent modifiables tels que le tabagisme, l'hypertension artérielle, l'obésité, le diabète, l'hypercholestérolémie, ainsi 
-        qu'un mode de vie, jouent un rôle dans le développement de ces pathologies. À cela s'ajoutent des prédispositions génétiques 
+        <a href="http://127.0.0.1:5500/images/avc.jpg"><img src="SantePlus_fichiers/avc_400x300.png" alt="image" style="float: right; margin: 10px 0 0 10px;" title="Cliquer pour agrandir"></a>.
+ 
+        Ce groupe de maladie comprend des affections telles que les 
+crises cardiaques, les accidents vasculaires célébraux (AVC), 
+        l'hypertension, ainsi que des maladies des artères coronaires et
+ les arythmies. <br><span class="red">Les facteurs de risques</span> 
+        souvent modifiables tels que le tabagisme, l'hypertension 
+artérielle, l'obésité, le diabète, l'hypercholestérolémie, ainsi 
+        qu'un mode de vie, jouent un rôle dans le développement de ces 
+pathologies. À cela s'ajoutent des prédispositions génétiques 
         et l'âge. 
-        <br><span class="red">Les symptômes</span> des maladies cardiovasculaires varient selon la condition spécifique, 
-        mais peuvent inclure des douleurs thoraciques (angine de poitrine), une fatigue excessive, des étourdissements, ou des 
-        gonflements dans les membres inférieurs. Certains symptômes comme des douleurs soudaines et intenses à la poitrine, peuvent 
+        <br><span class="red">Les symptômes</span> des maladies 
+cardiovasculaires varient selon la condition spécifique, 
+        mais peuvent inclure des douleurs thoraciques (angine de 
+poitrine), une fatigue excessive, des étourdissements, ou des 
+        gonflements dans les membres inférieurs. Certains symptômes 
+comme des douleurs soudaines et intenses à la poitrine, peuvent 
         indiquer une urgence médicale, telle qu'une crise cardiaque.
-        <br><span class="red">Le traitement</span> des maladies cardiovasculaires dépend de leur nature et de leur gravité.</strong> Ils peuvent inclure des changements
-        de mode de vie, comme l'adoption d'une alimentation saine, l'arrêt du tabac et la pratique régulière d'exercice physique. Sur le 
-        plan médical, les traitements peuvent comprendre l'administration de médicaments pour contrôler la pression artérielle,
-        réduire le cholestérol pour prévenir la forme des caillots sanguins. Dans les cas plus graves, des interventions chirurgicales
-        peuvent être nécessaire. La gestion à long terme de ces maladies implique souvent un suivi médical régulier et, dans certains
-        cas, un programme de rééducation cardiaque. <a href="malcarvas.html">Pour plus d'infos détaillées.</a>
+        <br><span class="red">Le traitement</span> des maladies 
+cardiovasculaires dépend de leur nature et de leur gravité. Ils peuvent 
+inclure des changements
+        de mode de vie, comme l'adoption d'une alimentation saine, 
+l'arrêt du tabac et la pratique régulière d'exercice physique. Sur le 
+        plan médical, les traitements peuvent comprendre 
+l'administration de médicaments pour contrôler la pression artérielle,
+        réduire le cholestérol pour prévenir la forme des caillots 
+sanguins. Dans les cas plus graves, des interventions chirurgicales
+        peuvent être nécessaire. La gestion à long terme de ces maladies
+ implique souvent un suivi médical régulier et, dans certains
+        cas, un programme de rééducation cardiaque. <a href="http://127.0.0.1:5500/malcarvas.html">Pour plus d'infos détaillées.</a>
         </p>
     
     
         <br><h2 id="inf_res">2.Les infections respiratoires</h2>
-        <a href="images/infection_res2.webp"><img class="image" src="images/infection_res2_300x200.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/infection_res2.webp"><img src="SantePlus_fichiers/infection_res2_300x200.png" alt="image" style="float: right; margin: 0 0 10px 10px; width: 1875%; height: 12.5rem;" title="Cliquer pour agrandir"></a>
         <p>Elles touchent les voies respiratoires (nez, gorge, bronches, poumons) et sont
         <span class="red">causées</span> par des virus, des bactéries ou des champignons. <span class="red">Les symptômes</span> se présente avec un écoulement nasal, maux de gorge, toux,
-        essoufflement, fièvre élevée. <br><span class="red">Les traitements</span> consistent à soulager les symptômes avec des antipyrétiques (paracétamol),
-        des antitussifs, ou des décongestionnants. Les antibiotiques sont utilisés, mais uniquement après confirmation de l'origine bactériene
-        de l'infection pour éviter une utilisation excessive. On a aussi le repos, l'hydratation, l'inhalation de vapeur pour soulager
+        essoufflement, fièvre élevée. <br><span class="red">Les traitements</span>
+ consistent à soulager les symptômes avec des antipyrétiques 
+(paracétamol),
+        des antitussifs, ou des décongestionnants. Les antibiotiques 
+sont utilisés, mais uniquement après confirmation de l'origine 
+bactériene
+        de l'infection pour éviter une utilisation excessive. On a aussi
+ le repos, l'hydratation, l'inhalation de vapeur pour soulager
         les symptômes respiratoires. <br><span class="red">La prévention</span> des infestions respiratoires passe par une bonne hygiène (lavage des mains), la
         vaccination (contre la grippe, la COVID-19,etc), et l'évitement des facteurs de risques comme la fumée de cigarette.</p> 
         
         <br><h2 id="can">3.Les cancers</h2>
-        <a href="images/cancer.jpg"><img class="image" src="images/cancer_500x400.png" alt="image" style="float: left; margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/cancer.jpg"><img src="SantePlus_fichiers/cancer_500x400.png" alt="image" style="float: left; margin: 0 10px 10px 0; width: 1800%; height: 12rem;" title="Cliquer pour agrandir"></a>
         <p>Le cancer est une maladie où les cellules se développent de façon incontrôler, formant des tumeurs
         et pouvant envahir d'autres parties du corps créant ainsi : le cancer du sein, le cancer de la prostate, du poumon, la
-        mélanome (cancer de la peau), la leucémie (cancer du sang), etc. <span class="red">Les causes</span> liées sont des facteurs génétiques (mutations héréditaires),
-        expositions environnementales (tabagisme, rayons UV), infections, mode de vie (alimentaires, exercices). Pour ce qu'il en est
+        mélanome (cancer de la peau), la leucémie (cancer du sang), etc. <span class="red">Les causes</span>
+ liées sont des facteurs génétiques (mutations héréditaires),
+        expositions environnementales (tabagisme, rayons UV), 
+infections, mode de vie (alimentaires, exercices). Pour ce qu'il en est
         <span class="red">des symptômes</span>, on a une fatigue, une perte de poids, des douleurs, des lésions  cutanées, des saignements anormaux. 
         <span class="red">Les traitements</span> consistent à faire une chirurgie, une chimiothérapie, l'immunothérapie, une thérapie ciblée. 
-        <a href="cancers.html">Pour plus d'infos détaillées.</a></p>
+        <a href="http://127.0.0.1:5500/cancers.html">Pour plus d'infos détaillées.</a></p>
         
         <br><h2 id="dia">4.Le diabète</h2>
-        <p>C'est une maladie chronique caractérisée par un taux élevé de sucre (glucose) dans le sang. Ce déséquilibre
-        résulte soit d'une production insuffisante d'insuline par le pancréas, soit d'une incapacité du corps à utiliser correctement
-        l'insuline produite. L'insuline est une hormone essentielle qui régule la quantité de glucose dans le sang en facilitant son
-        absorption par les cellules pour produire de l'énergie. Il existe plusieurs types de diabète, mais les deux principaux sont
+        <p>C'est une maladie chronique caractérisée par un taux élevé de
+ sucre (glucose) dans le sang. Ce déséquilibre
+        résulte soit d'une production insuffisante d'insuline par le 
+pancréas, soit d'une incapacité du corps à utiliser correctement
+        l'insuline produite. L'insuline est une hormone essentielle qui 
+régule la quantité de glucose dans le sang en facilitant son
+        absorption par les cellules pour produire de l'énergie. Il 
+existe plusieurs types de diabète, mais les deux principaux sont
         le diabète de type 1 et le diabète de type 2 :</p>
-        <a href="images/diabete.jpg"><img class="image" src="images/diabete_400x300.png" alt="image" style="float: left; margin: 10px 10px 0 0;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/diabete.jpg"><img src="SantePlus_fichiers/diabete_400x300.png" alt="image" style="float: left; margin: 10px 10px 10px 0; width: 1800%; height: 12.5rem;" title="Cliquer pour agrandir"></a>
         <p>
-            <br><span class="red">Le diabète de type 1 </span>: le système immunitaire détruit les cellules productrices
-            d'insuline. Ce type de diabète, souvent diagnostiqué chez les jeunes, nécessite un traitement par injection d'insuline à vie.
-            Le diabète est caractérisé par une émission d'urine excessive entrainant une soif intense, un appétit anormalement
-            augmenté, un amaigrissement malgrès une prise de nourriture abondante, une fatigue, une perte de poids, des troubles
+            <br><span class="red">Le diabète de type 1 </span>: le 
+système immunitaire détruit les cellules productrices
+            d'insuline. Ce type de diabète, souvent diagnostiqué chez 
+les jeunes, nécessite un traitement par injection d'insuline à vie.
+            Le diabète est caractérisé par une émission d'urine 
+excessive entrainant une soif intense, un appétit anormalement
+            augmenté, un amaigrissement malgrès une prise de nourriture 
+abondante, une fatigue, une perte de poids, des troubles
             de vision.
-            <br><span class="red">Le diabète de type 2</span> : le plus courant, il résulte d'une résistance à l'insuline souvent liée à des habitudes de vie comme
-            une mauvaise alimentation et  un manque d'exercice. Il peut être géré par des médicaments et des changements de mode de vie.
+            <br><span class="red">Le diabète de type 2</span> : le plus 
+courant, il résulte d'une résistance à l'insuline souvent liée à des 
+habitudes de vie comme
+            une mauvaise alimentation et  un manque d'exercice. Il peut 
+être géré par des médicaments et des changements de mode de vie.
             <br><strong>Le diabète mal contrôler peut entraîner des complications graves</strong> telles que les maladies cardiovasculaires, les lésions nerveuses
             et rénales, ainsi que des problèmes de cicatrisation. <span class="red">La prévention et la gestion</span> passe par une alimentation équilibrée, l'exercice
             physique régulier et, si nécessaire la prise de médicaments ou d'insuline. <span class="red">Un diagnostique</span> précoce et une bonne gestion permettent
@@ -136,58 +160,82 @@
 
 
         <br><h2 id="mal_inf">5.Les maladies infectieuses</h2>
-        <img class="image" src="images/mal_inf.png" alt="image" style="float: right; margin: 0 0 0 10px;">
-        <p>On peut citer : grippe, VIH/SIDA, COVID-19... Elles sont <span class="red">causées</span> par des micro-organismes comme les bactéries, les virus, les champignons
-        ou les parasites. Les maladies infectieuses se transmettent par l'air, le contact physique, les fluides corporels, l'eau ou la 
+        <img src="SantePlus_fichiers/mal_inf.png" alt="image" style="float: right; margin: 0 0 0 10px; width: 1800%; height: 10rem;">
+        <p>On peut citer : grippe, VIH/SIDA, COVID-19... Elles sont <span class="red">causées</span>
+ par des micro-organismes comme les bactéries, les virus, les 
+champignons
+        ou les parasites. Les maladies infectieuses se transmettent par 
+l'air, le contact physique, les fluides corporels, l'eau ou la 
         nourriture contaminée. Pour la <span class="red">prévention</span>, on a les vaccinations, le lavage des mains, la désinfection, l'utilisation de moustiquaire 
         ou des insecticides. Le traitement inclut antibiotiques, antiviraux, et antifongiques. La prévention reste la clé pour
-        limiter ces maladies. <a href="malinf.html">Pour plus d'infos détaillées.</a></p>
+        limiter ces maladies. <a href="http://127.0.0.1:5500/malinf.html">Pour plus d'infos détaillées.</a></p>
     
         
         <br><h2 id="com_neo">6.Les complications néonatales et les infections chez les nouveau-nés</h2>
-        <img class="image" src="images/inf_neana.png" alt="image" style="float: right; margin: 0 0 0 10px;">
+        <img src="SantePlus_fichiers/inf_neana.png" alt="image" style="float: right; margin: 0 0 0 10px; 
+        width: 1800rem; height: 13rem;">
         <p><span class="red">Complications néonatales</span> : problèmes respiratoires et neurologiques dus à une naissance avant 37 semaines 
         (<strong>prématurité</strong>) ; coincement des épaules pendant l'accouchement (<strong>dyctocie des épaules</strong>), 
-        entraînant des lésions nerveuses ; privatisation d'oxygène (<strong>asphyxie néonatale</strong>) pouvant provoquer des
-        dommages célébraux ; anomalies détectées à la naissance comme des malformations cardiaques ; excès de bilirubine causant la
+        entraînant des lésions nerveuses ; privatisation d'oxygène (<strong>asphyxie néonatale</strong>)
+ pouvant provoquer des
+        dommages célébraux ; anomalies détectées à la naissance comme 
+des malformations cardiaques ; excès de bilirubine causant la
         jaunisse, parfois nécessitant une photothérapie.</p> 
-        <p><span class="red">Infections néonatales</span> : on a une infection 
-        précoce dans les 72 premières heures souvent causées par des bactéries, et une infection tardive, après 72 heures souvent 
-        causées par des bactéries ou des champignons. Comme prévention et gestion, il faut essentiellement des soins prénatales, un 
-        accouchement sécurisé, une hygiène rigoureuse et un traitement précoce des infections réduisant les risques.
+        <p><span class="red">Infections néonatales</span> : on a une 
+infection 
+        précoce dans les 72 premières heures souvent causées par des 
+bactéries, et une infection tardive, après 72 heures souvent 
+        causées par des bactéries ou des champignons. Comme prévention 
+et gestion, il faut essentiellement des soins prénatales, un 
+        accouchement sécurisé, une hygiène rigoureuse et un traitement 
+précoce des infections réduisant les risques.
         </p> 
         
         
         <br><h2 id="tro_dig">7.Les troubles digestifs</h2>
-        <a href="images/trouble_diges.png"><img class="image" src="images/trouble_diges_280x300.png" alt="image" style="float: left; margin: 0 10px
-        0 0;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/trouble_diges.png"><img src="SantePlus_fichiers/trouble_diges_280x300.png" alt="image" style="float: left; margin: 0 10px
+        10px 0; width: 13.5rem; height: 15rem;" title="Cliquer pour agrandir"></a>
         <p>Les troubles digestifs incluent divers problèmes affectant le système digestif : retour acide de l'estomac vers 
         l'oesophage, provoquant des brûlures d'estomac ; douleurs abdominales et trouble de transit <strong>(syndrome de 
         l'intestin irritable)</strong> ; inflammation chronique comme <em class="italique">la maladie de Crohn</em> ou 
         <em class="italique">la colite ulcéreuse</em> ; plaies ouvertes dans l'estomac ou le duodénum <strong>(ulcères gastriques)</strong>, 
         souvent <span class="red">causées</span> par les infections ou les AINS ; inflammation du pancréas souvent due à
         l'alcool ou aux calculs biliaires <strong>(pancréatite)</strong> ; inflammation du foie causée par des infections virales, 
-        l'alcool ou des toxines <strong>(hépatite)</strong> ; difficulté à avoir des selles régulières <strong>(constipation)</strong> 
-        souvent due à un manque de fibre ou à un mode de vie sédentaire ; selles fréquentes et liquides causées par des infections 
+        l'alcool ou des toxines <strong>(hépatite)</strong> ; difficulté à avoir des selles régulières <strong>(constipation)</strong>
+ 
+        souvent due à un manque de fibre ou à un mode de vie sédentaire ;
+ selles fréquentes et liquides causées par des infections 
         ou des troubles <strong>(diarrhée)</strong>. <br>Comme <span class="red">prévention</span> et gestion, il faut 
         une alimentation équilibrée, l'hydratation, et faire une consultation médicale pour une gestion efficace des symptômes.</p>
     
         
         <br><h2 id="sin">8.Sinusite</h2>
-        <a href="images/sinus.gif"><img class="image" src="images/sinus_270x300.png" alt="image" style="float: left; margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/sinus.gif"><img src="SantePlus_fichiers/sinus_270x300.png" alt="image" style="float: left; margin: 0 10px 10px 0; 
+        width: 15rem; height: 18.75rem;" title="Cliquer pour agrandir"></a>
         <p>La sinusite est une inflammation de sinus, des cavités osseuses (au nombre de 4) du visage et du crâne, le plus souvent 
         c'est une complication aiguë des <em class="italique">rhinopharyngites ou des rhinites allergiques</em>, parfois des abcès 
-        dentaires. Cette maladie peut être <span class="red">provoquée par</span> des virus, des bactéries ou champignons, la 
-        poussière ou poils d'animaux (peuvent enflammer les sinus), la présence de polypes, la pollution, la fumée de cigarette, 
-        l'exposition du visage à des vapeurs irritantes ou les produits chimiques (peuvent irriter les sinus). La présence de 
-        carries dentaires provoque et aggrave la sinusite. <br>Pour ce qu'il en est des <span class="red">symptômes</span> on a la 
-        congestion nasale, la fièvre, des douleurs au niveau des pommettes, des écoulements clairs des deux narines, parfois des 
-        maux de tête. Lorsque la maladie persiste longtemps, on observe une sensation caractéristique de pression ou de battement 
-        dans les sinus en particulier lorsque la personne se penche en avant la tête en bas ; de plus, il arrive que la personne qui 
-        souffre de sinusite ait une toux grasse (souvent pire la nuit), une mauvaise haleine, des difficultés à avaler et du mal à supporter 
-        la lumière vive. <br>Les personnes qui souffrent d'asthme ont un risque plus important de souffrir de sinusite, du fait d'une 
-        plus grande sensibilité de leur muqueuse respiratoire et de la présence fréquente de polypes de la muqueuse des sinus. En 
-        effet, les polypes qui peuvent provoquer une sinusite sont trois fois plus fréquents chez les personnes asthmatiques. 
+        dentaires. Cette maladie peut être <span class="red">provoquée par</span>
+ des virus, des bactéries ou champignons, la 
+        poussière ou poils d'animaux (peuvent enflammer les sinus), la 
+présence de polypes, la pollution, la fumée de cigarette, 
+        l'exposition du visage à des vapeurs irritantes ou les produits 
+chimiques (peuvent irriter les sinus). La présence de 
+        carries dentaires provoque et aggrave la sinusite. <br>Pour ce qu'il en est des <span class="red">symptômes</span>
+ on a la 
+        congestion nasale, la fièvre, des douleurs au niveau des 
+pommettes, des écoulements clairs des deux narines, parfois des 
+        maux de tête. Lorsque la maladie persiste longtemps, on observe 
+une sensation caractéristique de pression ou de battement 
+        dans les sinus en particulier lorsque la personne se penche en 
+avant la tête en bas ; de plus, il arrive que la personne qui 
+        souffre de sinusite ait une toux grasse (souvent pire la nuit), 
+une mauvaise haleine, des difficultés à avaler et du mal à supporter 
+        la lumière vive. <br>Les personnes qui souffrent d'asthme ont un
+ risque plus important de souffrir de sinusite, du fait d'une 
+        plus grande sensibilité de leur muqueuse respiratoire et de la 
+présence fréquente de polypes de la muqueuse des sinus. En 
+        effet, les polypes qui peuvent provoquer une sinusite sont trois
+ fois plus fréquents chez les personnes asthmatiques. 
         <br><span class="red">Le traitement médical</span> propose <strong>des antibiotiques</strong> (en cas d'infection bactérienne),
         <strong>des corticostéroïdes nasaux</strong> (pour réduire l'inflammation), <strong>des décongestionnants</strong> 
         (pour soulager la congestion), <strong>des antihistaminiques</strong> (pour les sinusites liées aux allergies), 
@@ -196,40 +244,62 @@
         sinus ou corriger une anomalie structurelle.</p>
         
         <br><h2 id="hem">9.Hémorroïdes</h2>
-        <a href="images/hemorroide.jpg"><img class="image" src="images/hemorroide_500x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a> 
+        <a href="http://127.0.0.1:5500/images/hemorroide.jpg"><img src="SantePlus_fichiers/hemorroide_500x300.png" alt="image" style="float: right; margin: 0 0 10px 10px; 
+        width: 28rem; height: 20rem;" title="Cliquer pour agrandir"></a> 
         <p>Les hémorroïdes sont des formations vasculaires physiologiques de l'anus, on distingue l'hémorroïde externe et interne.
-        Cette maladie se développe progressivement pour apparaître à l'âge adulte, <span class="red">les facteurs</span> favorisant 
-        leur survenue sont la constipation chronique, la diarrhée (irritation due à des selles fréquentes), une grossesse 
-        (augmentation de la pression abdominale), manque d'activité physique, facteurs génétiques. En effet, la constipation provoque
-        des effets de poussés à la selle, ce qui augmentent la pression sur les veines anales et entraînent la dilatation des vaisseaux 
-        et des crises hémorroîdaires. Cela a pour conséquence de renforcer la constipation et de créer un cercle vicieux, car ces deux 
+        Cette maladie se développe progressivement pour apparaître à l'âge adulte, <span class="red">les facteurs</span>
+ favorisant 
+        leur survenue sont la constipation chronique, la diarrhée 
+(irritation due à des selles fréquentes), une grossesse 
+        (augmentation de la pression abdominale), manque d'activité 
+physique, facteurs génétiques. En effet, la constipation provoque
+        des effets de poussés à la selle, ce qui augmentent la pression 
+sur les veines anales et entraînent la dilatation des vaisseaux 
+        et des crises hémorroîdaires. Cela a pour conséquence de 
+renforcer la constipation et de créer un cercle vicieux, car ces deux 
         problèmes sont étroitement liés.</p> 
         <p>
-            <br><span class="red">Les symptômes</span> sont généralement une douleur intense au niveau de l'anus, présence de sang sur 
-            les selles, une grande difficulté à s'asseoir pendant longtemps, des douleurs aux reins et surtout des constipations exagérées. 
-            Afin d'éviter la constipation, il faut réduire la consommation des aliments comme les pâtes, le riz, les bananes, les carottes, 
+            <br><span class="red">Les symptômes</span> sont généralement
+ une douleur intense au niveau de l'anus, présence de sang sur 
+            les selles, une grande difficulté à s'asseoir pendant 
+longtemps, des douleurs aux reins et surtout des constipations 
+exagérées. 
+            Afin d'éviter la constipation, il faut réduire la 
+consommation des aliments comme les pâtes, le riz, les bananes, les 
+carottes, 
             les aliments riches en acides gras <strong>(car ils ralentissent le transit intestinal)</strong> : thon, marquero, sardine, 
             huile de soja, huile de palme, viande rouge, le beurre, le fromage, le lait...    
-            <br><span class="red">Le traitement médical</span> fait appel à des conseils alimentaires simples comme par exemple éviter 
-            les excès alimentaires, les boissons alcoolisées, les excitants (thé, café, coca cola...), boire une grande quantité d'eau 
-            quotidiennement (au moins 2 litres par jour), faire des activités physiques, consommer des légumes verts, des fruits secs et 
-            frais, des céréales, aussi éviter les épices telles que le poivre, le piment, la moutarde et bien d'autres. 
+            <br><span class="red">Le traitement médical</span> fait 
+appel à des conseils alimentaires simples comme par exemple éviter 
+            les excès alimentaires, les boissons alcoolisées, les 
+excitants (thé, café, coca cola...), boire une grande quantité d'eau 
+            quotidiennement (au moins 2 litres par jour), faire des 
+activités physiques, consommer des légumes verts, des fruits secs et 
+            frais, des céréales, aussi éviter les épices telles que le 
+poivre, le piment, la moutarde et bien d'autres. 
             <br><strong>L'hémorroïde a pour conséquence de provoquer des maladies telles que la maladie de Parkinson, les maladies 
             neuromusculaires, la maladie de Charcot et bien d'autres.</strong>    
         </p>
         
         <br><h2 id="her">10.Hernie</h2>
-        <a href="images/hernies.jpg"><img class="image" src="images/hernies_400x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
-        <p>Les hernies peuvent apparaître à tous les âges y compris chez le nouveau-né et touchent les deux sexes bien que plus 
-        fréquentes chez les hommes. Elles surviennent lorsque des organes ou des tissus internes poussent à travers une faiblesse 
-        ou une ouverture dans la paroi musculaire ou tissulaire qui les entoure normalement. On distingue plusieurs types d'hernies : 
+        <a href="http://127.0.0.1:5500/images/hernies.jpg"><img src="SantePlus_fichiers/hernies_400x300.png" alt="image" style="float: right; margin: 0 0 10px 10px ; 
+        width: 25rem; height: 18.75rem;" title="Cliquer pour agrandir"></a>
+        <p>Les hernies peuvent apparaître à tous les âges y compris chez
+ le nouveau-né et touchent les deux sexes bien que plus 
+        fréquentes chez les hommes. Elles surviennent lorsque des 
+organes ou des tissus internes poussent à travers une faiblesse 
+        ou une ouverture dans la paroi musculaire ou tissulaire qui les 
+entoure normalement. On distingue plusieurs types d'hernies : 
         <em class="italique">l'hernie inguinale, hiatale, ombilicale, fémorale et incisionnelle</em>. <span class="red">Les facteurs</span> 
         favorisant leur apparition sont : <strong>la faiblesse des muscles</strong> (elle peut être congénitale ou acquise avec le temps), 
         <strong>les efforts physiques</strong> (porter des objets lourds, une toux chronique, ou même un effort pour aller à la selle 
         peut aggraver la pression abdominale), <strong>l'obésité</strong> (le surpoids met plus de pression sur la paroi abdominale), 
-        <strong>la grossesse</strong> (la grossesse peut affaiblir les muscles de l'abdomen). <br><span class="red">Les symptômes</span> 
-        se présentent comme une bosse visible dans la zone affectée, qui peut disparaître en position couchée ; une douleur ou gêne, 
-        surtout lors de la toux, de l'effort ou du port de charges. Dans les hernies hiatales, des symptômes comme des brûlures d'estomac 
+        <strong>la grossesse</strong> (la grossesse peut affaiblir les muscles de l'abdomen). <br><span class="red">Les symptômes</span>
+ 
+        se présentent comme une bosse visible dans la zone affectée, qui
+ peut disparaître en position couchée ; une douleur ou gêne, 
+        surtout lors de la toux, de l'effort ou du port de charges. Dans
+ les hernies hiatales, des symptômes comme des brûlures d'estomac 
         ou des reflux gastriques peuvent être présents. <strong>Si la hernie n'est pas traitée, elle peut devenir étranglée, c'est-à-dire 
         que le flux sanguin vers l'organe affecté est coupé.</strong> Cela peut entraîner une urgence médicale, nécessitant 
         <em class="italique">une intervention chirurgicale immédiate</em>. Il faut savoir que l'hernie ombilicale chez les enfants, 
@@ -240,8 +310,10 @@
     
     
         <br><h2 id="acn">11.Acné</h2>
-        <p>L'acné est une affection cutanée courante qui survient lorsque les follicules pileux (pores de la peau) se bouchent avec 
-        du sébum (huile naturelle produite par la peau) et des cellules mortes. Cela entraîne la formation de boutons de points noirs, 
+        <p>L'acné est une affection cutanée courante qui survient 
+lorsque les follicules pileux (pores de la peau) se bouchent avec 
+        du sébum (huile naturelle produite par la peau) et des cellules 
+mortes. Cela entraîne la formation de boutons de points noirs, 
         de kystes ou de nodules.</p>
         <h3>Causes</h3>
         <ol>
@@ -256,7 +328,8 @@
             sucre ou en produits laitiers peuvent aggraver l'acné chez certaines personnes.</li>
             <li><strong>Sress</strong> : le stress peut aggraver l'acné en déclenchant des poussées hormonales.</li>
         </ol>
-        <a href="images/acne2.webp"><img class="image" src="images/acne2_300x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/acne2.webp"><img src="SantePlus_fichiers/acne2_300x300.png" alt="image" style="float: right; margin: 0 0 10px 10px; 
+        width: 19rem; height: 19rem;" title="Cliquer pour agrandir"></a>
         <h3>Facteurs aggravants</h3>
         <ul>
             <li><strong>Cosmétiques comédogènes</strong> : certains produits de soins de la peau ou de maquillage peuvent boucher les pores.</li>
@@ -287,8 +360,10 @@
             <li>Adopter une alimentation équilibrée et réduire les aliments potentiellement déclencheurs, comme les produits
             riches en sucre.</li>
         </ul>
-        <p>L'acné peut avoir des effets sur la confiance en soi, surtout chez les adolescents. Il est important de traiter l'acné non
-        seulement pour la peau, mais aussi pour la santé mentale. En cas d'acné sévère ou persistante, il est conseillé de consulter
+        <p>L'acné peut avoir des effets sur la confiance en soi, surtout
+ chez les adolescents. Il est important de traiter l'acné non
+        seulement pour la peau, mais aussi pour la santé mentale. En cas
+ d'acné sévère ou persistante, il est conseillé de consulter
         un dermatologue pour un traitement personnalisé.
         </p>
     
@@ -297,7 +372,8 @@
         <p>La maladie d'Alzheimer est une maladie neurodégénérative progressive qui affecte le cerveau, entraînant une 
         perte de mémoire, un déclin cognitif et des changements de personnalité. C'est la cause la plus courante de démence, en 
         particuliers chez les personnes âgées.</p>
-        <img class="image" src="images/alzheimer1.avif" alt="image" style="float: right; margin: 0 0 0 10px;">
+        <img src="SantePlus_fichiers/alzheimer1.avif" alt="image" style="float: right; margin: 0 0 10px 10px; 
+        width: 25rem; height: 20rem;">
         <h3>Caractéristiques principales</h3>
         <ul>
             <li><strong>Perte de mémoire</strong> : les premiers symptômes incluent souvent des difficultés à se souvenir des évènements récents, des
@@ -310,8 +386,10 @@
             vie quotidienne, comme manger, s'habiller ou se laver.</li>
         </ul> 
         <h3>Causes</h3>
-        <p>Bien que la cause exacte de la maladie d'Alzheimer ne soit pas entièrement comprise, on pense qu'elle 
-        résulte d'une combinaison de facteurs génétiques, environnementaux et liés au mode vie qui affectent le cerveau au fil du
+        <p>Bien que la cause exacte de la maladie d'Alzheimer ne soit 
+pas entièrement comprise, on pense qu'elle 
+        résulte d'une combinaison de facteurs génétiques, 
+environnementaux et liés au mode vie qui affectent le cerveau au fil du
         temps. Les facteurs clés incluent :</p>
         <ul>
             <li><strong>Plaques de bêta-amyloïde</strong> : accumulation anormale de fragments de protéines entre les neurones.</li>
@@ -328,8 +406,8 @@
             <li>Des examens d'imagerie célébrale pour détecter un rétrécissement ou des anomalies du cerveau.</li>
             <li>Des analyses sanguines pour écarter d'autres causes des symptômes.</li>
         </ul>
-        <a href="images/IRM_alzheimer.jpg"><img class="image" src="images/IRM_alzheimer_400x300.png" alt="image" style="float: right;
-        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+        <a href="http://127.0.0.1:5500/images/IRM_alzheimer.jpg"><img src="SantePlus_fichiers/IRM_alzheimer_400x300.png" alt="image" style="float: right;
+        margin: 0 0 10px 10px; width: 23rem; height: 18rem;" title="Cliquer pour agrandir"></a>
         <h3>Traitements</h3>
         <p>Bien qu'il n'existe pas de remède, les traitements peuvent aider à gérer les symptômes :</p>
         <ul>
@@ -345,5 +423,43 @@
     <div class="footers">
 
     </div>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
