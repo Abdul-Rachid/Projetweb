@@ -19,13 +19,19 @@ body{
     body {
         font-size: 1rem;
     }
+    .title°1 {
+        font-size: 1.8em;
+    }
     .image {
-        width: 30%;
+        width: 20%;
     }
     .vector-header-start {
         display: flex;
         align-items: center;
         margin: 10px;
+    }
+    .vector_menu_content_list {
+        margin-left: 180px;
     }
     .menu-label {
         width: 80%;
@@ -51,13 +57,19 @@ body{
     body {
         font-size: 1rem;
     }
+    .title°1 {
+        font-size: 1.6em;
+    }
     .image {
-        width: 35%;
+        width: 28%;
     }
     .vector-header-start {
         display: flex;
         align-items: center;
         margin: 5px;
+    }
+    .vector_menu_content_list {
+        margin-left: 80px;
     }
     .menu-label {
         width: 75%;
@@ -84,7 +96,12 @@ body{
         display: flex;
         align-items: center;
         margin: 0;
-
+    }
+    .vector_menu_content_list {
+        margin-left: 10px;
+    }
+    .title°1 {
+        font-size: 1.5em;
     }
     .image {
         width: 40%;
@@ -130,36 +147,31 @@ body{
 
 }
 
-.red,h3{
+.red {
     color:rgb(255, 0, 0);
 }
 .italique{
-    color:rgb(0, 0, 255);
+    color:rgb(14, 148, 12);
 }
-h2{
+.subtitle {
     text-transform: capitalize;
 }
 
 
-h1{
+.title°1 {
     border: 3px solid #efc7c7;
+    padding: 2px;
+    display: inline-block;
 }
 
 
 /* Style pour le menu */
-.dropdown-menu {
+.dropdown_menu {
     width: 12%;
+    position: relative;
 }
 .vector-dropdown {
     width: 94%;
-}
-
-.vector-dropdown .vector-dropdown-checkbox {
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    display: none;
 }
 
 
@@ -179,53 +191,64 @@ h1{
 }
 
 /* Style pour le contenu du menu */
-.vector-menu-content {
+.vector_menu_content {
     visibility: visible;
     height: auto;
     overflow: hidden auto;
-    position: absolute;
-    z-index: 50;
     background-color: #b7b6bd;
     font-size: 1rem;
     box-shadow: 0 2px 6px -1px rgba(0,0,0,10);
-    transition-property: opacity;
-    transition-duration: 100ms;
     max-width: 15.625rem;
 }
 
 /* Style pour la liste du menu */
-.vector-menu-content-list {
+.vector_menu_content_list {
     list-style: none;
-    margin: 10px;
-    padding: 0;
+    padding: 10px;
     line-height: 1.6;
     width: max-content;
     display: none; /*La propriété display permet de cacher la liste par défaut */
-
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    border-radius: 20px;
 }
 
+/* Overlay pour la zone de clique en dehors du menu */
+.menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.74); /*Transparence*/
+    z-index: 1;
+}
 
-/* Afficher la liste du menu si la checkbox est cochée */
-#menu-toggle:checked + .menu-label + .vector-menu-content .vector-menu-content-list {
+/* Afficher le menu déroulant et l'overlay lorsqu'on clique sur le boutton */
+.menu_open #menu_items {
+    display: block;
+}
+.menu_open #menu_overlay {
     display: block;
 }
 
-
 /* Style pour les éléments de la liste */
-#menu-items .vector-menu-content-list .mw-list-items {
+#menu_items .vector_menu_content_list .mw_list_item {
     padding: 0;
     margin-bottom: 0.1em;
 }
 
 /* Style sur les liens du menu principal */
-.vector-menu-content .mw-list-item a {
+.vector_menu_content .mw_list_item a {
     color: black;
     text-decoration: none;
 }
 
 
-/* Changement de couleur au survol des liens */
-.vector-menu-content .mw-list-item:hover {
+/* Changement de couleur au survol des liens du menu principal */
+.vector_menu_content .mw_list_item:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.1em;
     text-decoration-color: red;
@@ -236,15 +259,15 @@ h1{
     display: flex;
     align-items: center;
 }
+.logo-text {
+    color: #574791;
+}
 
 /* Style pour pieds de la page */
 .footers {
     background-color: #e5e8e8;
     height: 15rem;
 }
-
-/* Transparence en arrière plan */
-.body_container {
-    color: black;
-    opacity: 0.5;
+.links {
+    text-decoration: none;
 }

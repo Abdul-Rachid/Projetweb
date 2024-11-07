@@ -11,40 +11,34 @@
 <body> 
     <div class="vector-header-container">
         <header class="vector-header mw-header">
-            <div class="vector-header-start">
-                <nav class="dropdown-menu" aria-label="Site">
+            <div id="header_start" class="vector-header-start">
+                <nav class="dropdown_menu" aria-label="Site">
                     <div class="vector-dropdown">
-                        <input type="checkbox" id="menu-toggle" role="button" aria-haspopup="true" 
-                        aria-expanded="false" aria-controls="menu-items" class="vector-dropdown-checkbox" aria-label="Menu principal">
-                        <label class="menu-label" for="menu-toggle" onclick="showOverlay" aria-haspopup="true" aria-hidden="true">
+                        <label id="menu_button" class="menu-label" for="menu-toggle" aria-haspopup="true" aria-hidden="true">
                             <img class="humberger" src="images/menu_lateral_44x44.png" alt="menu-lateral">
                         </label>
-                        <div id="menu-content" class="vector-menu-content">
-                            <ul id="menu-items" class="vector-menu-content-list" role="menu" aria-hidden="true">
-                                <li role="menuitem" class="mw-list-item"><a href="#mal_car">les maladies cardiovasculaires</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#inf_res">les infections respiratoires</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#can">les cancers</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#dia">le diabète</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#mal_inf">les maladies infectieuses</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#com_neo">les complications néonatales</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#tro_dig">les troubles digestifs</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#sin">la sinusite</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#hem">l'hémorroïde</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#her">l'hernie</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#acn">l'acné</a></li>
-                                <li role="menuitem" class="mw-list-item"><a href="#alz">l'Alzheimer</a></li>
+                        <div id="menu_content" class="vector_menu_content" >
+                            <ul id="menu_items" class="vector_menu_content_list" role="menu" aria-hidden="true">
+                                <li id="list_item" class="mw_list_item"><a href="#mal_car">les maladies cardiovasculaires</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#inf_res">les infections respiratoires</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#can">les cancers</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#dia">le diabète</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#mal_inf">les maladies infectieuses</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#com_neo">les complications néonatales</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#tro_dig">les troubles digestifs</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#sin">la sinusite</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#hem">l'hémorroïde</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#her">l'hernie</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#acn">l'acné</a></li>
+                                <li id="list_item" class="mw_list_item"><a href="#alz">l'Alzheimer</a></li>
                             </ul>
+                        </div>
+                        <div id="menu_overlay" class="menu_overlay">
+                        
                         </div>
                     </div>
                 </nav>
-                <script>
-                    
-                    function showOverlay() {
-                        let body_container = document.getElementById('body-container');
-                        body_container.style.opacity = '0.5';
-                    }
-                </script>
-                <div class="mw-logo">
+                <div id="mw_logo" class="mw-logo">
                     <img class="image-logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
                     <span class="logo-text">Santé PLUS</span>
                     <img class="image-logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
@@ -53,297 +47,332 @@
         </header>
     </div>
 
-    <div id="body_container"  class="vector-body-container">
-        <h1>QUELQUES MALADIES COURANTES DANS LE MONDE !</h1>
-        <div>
-            <a href="images/perfusion.png"><img class="image"  src="images/perfusion_300x300.png" alt="" style="float: left; margin: 0 10px 0 0;"
-             title="Cliquer pour agrandir"></a>
-            <p>On constate avec regret de nombreuses maladies qui évoluent en se camouflant dans l'organisme comme une bombe à retardement 
-            telles que <a href="#mal_car">les maladies cardiovasculaires</a>, <a href="#inf_res">les infections respiratoires</a>, 
-            <a href="#can">les cancers</a>, <a href="#dia">le diabète</a>, <a href="#mal_inf">les maladies infectieuses</a>, 
-            <a href="#com_neo">les complications néonatales</a>, <a href="#tro_dig">les troubles digestifs</a>, 
-            <a href="#sin">la sinusite</a>, <a href="#hem">l'hémorroïde</a>, <a href="#her">l'hernie</a>, <a href="#acn">l'acné</a>, 
-            <a href="#alz">l'Alzheimer</a> et bien d'autres. Il est donc vitale de s'impreigner des causes, symptômes, et 
-            traitements liés à ces maladies.
-            </p>        
+    <main>
+        <div id="body_container"  class="vector-body-container">
+            <h1 class="title°1">Santé Globale : Comprendre et Prévenir les Maladies les Plus Courantes</h1>
+            <div>
+                <a href="images/perfusion.png"><img class="image"  src="images/perfusion_300x300.png" alt="" style="float: left; margin: 0 10px 0 0;"
+                 title="Cliquer pour agrandir"></a>
+                <p id="intro_content">
+                    Dans un monde où les maladies chroniques et infectieuses affectent de plus en plus de personnes, il est essentiel de 
+                    comprendre les différents maux qui touchent notre santé. Des <a class="links" href="#mal_car">maladies cardiovasculaires</a> 
+                    aux <a class="links" href="#inf_res">infections respiratoires</a>, en passant par le <a class="links" href="#can">cancer</a>, 
+                    le <a class="links" href="#dia">diabète</a>, les <a class="links" href="#tro_dig">troubles digestifs</a> ou encore 
+                    les <a class="links" href="#mal_inf">maladies infectieuses</a>, les <a class="links" href="#com_neo">complications néonatales</a>, 
+                    chaque condition a un impact significatif sur la qualité de la vie. Ce site est dédié à vous fournir des informations claires 
+                    et fiables sur ces pathologies, incluant également des affections plus spécifiques telles que la <a class="links" href="#sin">sinusite</a>, 
+                    les <a class="links" href="#hem">hémorroïdes</a>, les <a class="links" href="#her">hernies</a>, 
+                    l'<a class="links" href="#acn">acné</a> et la <a class="links" href="#alz">maladie  d'Alzheimer</a>. Ensemble, 
+                    découvrons les meilleures approches pour les prévenir, les reconnaître et les traiter.
+                </p> 
+            </div>
+            
+            <br><h2 id="mal_car" class="subtitle">1.Les maladies cardiovasculaires</h2>
+            <p>Elles regroupent un ensemble de troubles qui affectent le coeur et les vaisseaux sanguins, constituant aujourd'hui 
+            l'une des principales causes de décès dans le monde.<strong> Selon les données de l'OMS, les maladies cardiovasculaires
+            sont responsables de près de 18 millions de décès chaque année. Soit environ 32% de l'ensemble des décès dans le monde, 
+            parmis ces décès environ 85% sont dus à des crises cardiaques et des accidents vasculaires célébraux (AVC)</strong>
+            <a href="images/avc.jpg"><img class="image" src="images/avc_400x300.png" alt="image" style="float: right; margin: 10px 0 0 10px;" 
+            title="Cliquer pour agrandir"></a>. 
+            Ce groupe de maladie comprend des affections telles que les crises cardiaques, les accidents vasculaires célébraux (AVC), 
+            l'hypertension, ainsi que des maladies des artères coronaires et les arythmies. <br><span class="red">Les facteurs de risques</span> 
+            souvent modifiables tels que le tabagisme, l'hypertension artérielle, l'obésité, le diabète, l'hypercholestérolémie, ainsi 
+            qu'un mode de vie, jouent un rôle dans le développement de ces pathologies. À cela s'ajoutent des prédispositions génétiques 
+            et l'âge. 
+            <br><span class="red">Les symptômes</span> des maladies cardiovasculaires varient selon la condition spécifique, 
+            mais peuvent inclure des douleurs thoraciques (angine de poitrine), une fatigue excessive, des étourdissements, ou des 
+            gonflements dans les membres inférieurs. Certains symptômes comme des douleurs soudaines et intenses à la poitrine, peuvent 
+            indiquer une urgence médicale, telle qu'une crise cardiaque.
+            <br><span class="red">Le traitement</span> des maladies cardiovasculaires dépend de leur nature et de leur gravité.</strong> Ils peuvent inclure des changements
+            de mode de vie, comme l'adoption d'une alimentation saine, l'arrêt du tabac et la pratique régulière d'exercice physique. Sur le 
+            plan médical, les traitements peuvent comprendre l'administration de médicaments pour contrôler la pression artérielle,
+            réduire le cholestérol pour prévenir la forme des caillots sanguins. Dans les cas plus graves, des interventions chirurgicales
+            peuvent être nécessaire. La gestion à long terme de ces maladies implique souvent un suivi médical régulier et, dans certains
+            cas, un programme de rééducation cardiaque. <a href="malcarvas.html">Pour plus d'infos détaillées.</a>
+            </p>
+        
+        
+            <br><h2 id="inf_res" class="subtitle">2.Les infections respiratoires</h2>
+            <a href="images/infection_res2.webp"><img class="image" src="images/infection_res2_300x200.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+            <p>Elles touchent les voies respiratoires (nez, gorge, bronches, poumons) et sont
+            <span class="red">causées</span> par des virus, des bactéries ou des champignons. <span class="red">Les symptômes</span> se présente avec un écoulement nasal, maux de gorge, toux,
+            essoufflement, fièvre élevée. <br><span class="red">Les traitements</span> consistent à soulager les symptômes avec des antipyrétiques (paracétamol),
+            des antitussifs, ou des décongestionnants. Les antibiotiques sont utilisés, mais uniquement après confirmation de l'origine bactériene
+            de l'infection pour éviter une utilisation excessive. On a aussi le repos, l'hydratation, l'inhalation de vapeur pour soulager
+            les symptômes respiratoires. <br><span class="red">La prévention</span> des infestions respiratoires passe par une bonne hygiène (lavage des mains), la
+            vaccination (contre la grippe, la COVID-19,etc), et l'évitement des facteurs de risques comme la fumée de cigarette.</p> 
+            
+            <br><h2 id="can" class="subtitle">3.Les cancers</h2>
+            <a href="images/cancer.jpg"><img class="image" src="images/cancer_500x400.png" alt="image" style="float: left; margin: 0 10px 0 0;" 
+            title="Cliquer pour agrandir"></a>
+            <p>Le cancer est un groupe de maladies caractérisées par la croissance anormale de cellules qui ont le potentiel d'envahir
+            ou de se propager à d'autres parties du corps. Il existe plus de 100 types de cancers différents, affectant divers organes
+            et systèmes.
+            <br><span class="red">Causes</span> : Les cancers peuvent être causés par une combinaison de facteurs génétiques, environnementaux
+            et comportementaux. L'exposition au tabac, à l'alcool, à des produits chimiques nocifs, ainsi que les radiations, jouent un rôle 
+            significatif. Ceux les plus répandu sont : le  <a class="links" href="cancers.html#sein">cancer du sein</a>, du <a class="links" href="cancers.html#poumon">poumon</a>, 
+            de la <a class="links" href="cancers.html#prostate">prostate</a>, de la <a class="links" href="cancers.html#peau">peau</a>, du <a class="links" href="cancers.html#sang">sang</a>, 
+            de <a class="links" href="cancers.html#utérus">l'utérus</a>, du <a class="links" href="cancers.html#côlon">côlon</a>, du <a class="links" href="cancers.html#foie">foie</a>... 
+            Les infections chroniques, telles que celles causées par les virus HPV (papillomavirus humain) ou HBV (hépatite B), sont 
+            également des facteurs de risques.
+            <br><span class="red">Symptômes</span> : Les symptômes varient selon le type de cancer, mais ils incluent souvent la formations
+            de masse ou de tumeurs, des douleurs inexpliquées, des pertes de poids inexpliquées, de la fatigue et des changements dans la peau.
+            <br><span class="red">Traitements</span> : Les options de traitement incluent la chirugie, la radiothérapie, la chimiothérapie, l'immunothérapie
+            et la thérapie ciblée. Le choix du traitement dépend du type et du stade de cancer, ainsi que la condition globale du patient.
+            <a href="cancers.html">Pour plus d'infos détaillées.</a></p>
+            </p>
+            
+    
+            <br><h2 id="dia" class="subtitle">4.Le diabète</h2>
+            <p>C'est une maladie chronique caractérisée par un taux élevé de sucre (glucose) dans le sang. Ce déséquilibre
+            résulte soit d'une production insuffisante d'insuline par le pancréas, soit d'une incapacité du corps à utiliser correctement
+            l'insuline produite. L'insuline est une hormone essentielle qui régule la quantité de glucose dans le sang en facilitant son
+            absorption par les cellules pour produire de l'énergie. Il existe plusieurs types de diabète, mais les deux principaux sont
+            le diabète de type 1 et le diabète de type 2 :</p>
+            <a href="images/diabete.jpg"><img class="image" src="images/diabete_400x300.png" alt="image" style="float: left; margin: 10px 10px 0 0;" title="Cliquer pour agrandir"></a>
+            <p>
+                <br><span class="red">Le diabète de type 1 </span>: le système immunitaire détruit les cellules productrices
+                d'insuline. Ce type de diabète, souvent diagnostiqué chez les jeunes, nécessite un traitement par injection d'insuline à vie.
+                Le diabète est caractérisé par une émission d'urine excessive entrainant une soif intense, un appétit anormalement
+                augmenté, un amaigrissement malgrès une prise de nourriture abondante, une fatigue, une perte de poids, des troubles
+                de vision.
+                <br><span class="red">Le diabète de type 2</span> : le plus courant, il résulte d'une résistance à l'insuline souvent liée à des habitudes de vie comme
+                une mauvaise alimentation et  un manque d'exercice. Il peut être géré par des médicaments et des changements de mode de vie.
+                <br><strong>Le diabète mal contrôler peut entraîner des complications graves</strong> telles que les maladies cardiovasculaires, les lésions nerveuses
+                et rénales, ainsi que des problèmes de cicatrisation. <span class="red">La prévention et la gestion</span> passe par une alimentation équilibrée, l'exercice
+                physique régulier et, si nécessaire la prise de médicaments ou d'insuline. <span class="red">Un diagnostique</span> précoce et une bonne gestion permettent
+                de vivre une vie saine  malgré la maladie.
+            </p>    
+    
+    
+            <br><h2 id="mal_inf" class="subtitle">5.Les maladies infectieuses</h2>
+            <img class="image" src="images/mal_inf.png" alt="image" style="float: right; margin: 0 0 0 10px;">
+            <p>
+            Les maladies infectieuses sont causées par des micro-organismes tels que les bactéries, les virus, les champignons ou les parasites.
+            Ces maladies peuvent se propager d'une personne à l'autre, par l'intermédiare d'animaux ou de l'environnement. On a par exemple
+            la tuberculose, les infections urinaires, la salmonellose (de <span class="red">types bactériennes</span>); la grippe, le  VIH/SIDA, la COVID-19
+            (de <span class="red">types virales</span>); le paludisme, la toxoplasmose (de <span class="red">types parasitaires</span>) et la candidose.
+            La <span class="red">transmission</span> peut se faire par contact direct, indirect, par les gouttelettes respiratoires,
+            les vecteurs comme les moustiques ou l'eau et les aliments contaminés. Comme <span class="red">prévention</span>, la 
+            vaccination est une méthode clé pour de nombreuses maladies infectieuses. Une bonne hygiéne, le lavage fréquent des mains,
+            et la gestion correcte des déchets jouent également un rôle crucial dans la prévention.
+            <br>Le <span class="red">traitement</span> varie selon l'infection. Les antibiotiques sont utilisés pour les infections 
+            bactériennes, tandis que les antiviraux sont utilisés pour les maladies virales. Les infections fongiques nécessitent des 
+            antifongiques, et les antiparasitaires sont utilisés pour les maladies causées par les parasites.
+            <a href="malinf.html">Pour plus d'infos détaillées.</a>
+            </p>
+    
+            
+            <br><h2 id="com_neo" class="subtitle">6.Les complications néonatales et les infections chez les nouveau-nés</h2>
+            <img class="image" src="images/inf_neana.png" alt="image" style="float: right; margin: 0 0 0 10px;">
+            <p><span class="red">Complications néonatales</span> : problèmes respiratoires et neurologiques dus à une naissance avant 37 semaines 
+            (<strong>prématurité</strong>) ; coincement des épaules pendant l'accouchement (<strong>dyctocie des épaules</strong>), 
+            entraînant des lésions nerveuses ; privatisation d'oxygène (<strong>asphyxie néonatale</strong>) pouvant provoquer des
+            dommages célébraux ; anomalies détectées à la naissance comme des malformations cardiaques ; excès de bilirubine causant la
+            jaunisse, parfois nécessitant une photothérapie.</p> 
+            <p><span class="red">Infections néonatales</span> : on a une infection 
+            précoce dans les 72 premières heures souvent causées par des bactéries, et une infection tardive, après 72 heures souvent 
+            causées par des bactéries ou des champignons. Comme prévention et gestion, il faut essentiellement des soins prénatales, un 
+            accouchement sécurisé, une hygiène rigoureuse et un traitement précoce des infections réduisant les risques.
+            </p> 
+            
+            
+            <br><h2 id="tro_dig" class="subtitle">7.Les troubles digestifs</h2>
+            <a href="images/trouble_diges.png"><img class="image" src="images/trouble_diges220x182.png" alt="image" style="float: left; margin: 0 10px
+            0 0;" title="Cliquer pour agrandir"></a>
+            <p>
+                Les troubles digestifs incluent une variété de conditions affectant l'estomac, les intestins et d'autres parties du
+                système digestif. Les <span class="red">troubles courants</span> sont : le <em class="italique">reflux gastro-œsophagien (RGO)</em> :
+                un retour d'acide dans l'œsophage qui provoque des brûlures d'estomac. Le <em class="italique">syndrome de l'intestin irritable (SII)</em>
+                : un trouble fonctionnel qui cause des douleurs abdominales, des ballonnements, de la constipation ou de la diarrhée.
+                La <em class="italique">maladie de Crohn et colite ulcéreuse</em> : maladies inflammatoires chroniques de l'intestin
+                qui affectent principalement le côlon et l'intestin grêle. Les <em class="italique">intolérances alimentaires</em> : 
+                intolérance au lactose, maladie cœliaque.
+                <br><span class="red">Causes</span> : ces troubles peuvent être causés par des facteurs génétiques, une alimentation
+                déséquilibrée, le stress, des infections bactériennes ou virales, et des anomalies du système immunitaire. 
+                <span class="red">Symptômes</span> : les symptômes incluent les douleurs abdominales, des ballonnements, des changements
+                dans les habitudes intestinales (diarrhée, constipation), des nausées et des vomissements. <span class="red">Traitements</span>
+                : les traitements dépendent du trouble spécifique. Il peuvent inclure des changements  alimentaires, des médicaments 
+                pour réduire l'acidité (dans le cas du RGO), des antibiotiques, des anti-inflammatoires, et dans certains cas, une 
+                intervention chirurgicale (notamment pour les maladies inflammatoires chroniques).
+    
+            </p>
+            
+            
+            <br><h2 id="sin" class="subtitle">8.Sinusite</h2>
+            <a href="images/sinus.gif"><img class="image" src="images/sinus_270x300.png" alt="image" style="float: left; margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
+            <p>La sinusite est une inflammation de sinus, des cavités osseuses (au nombre de 4) du visage et du crâne, le plus souvent 
+            c'est une complication aiguë des <em class="italique">rhinopharyngites ou des rhinites allergiques</em>, parfois des abcès 
+            dentaires. Cette maladie peut être <span class="red">provoquée par</span> des virus, des bactéries ou champignons, la 
+            poussière ou poils d'animaux (peuvent enflammer les sinus), la présence de polypes, la pollution, la fumée de cigarette, 
+            l'exposition du visage à des vapeurs irritantes ou les produits chimiques (peuvent irriter les sinus). La présence de 
+            carries dentaires provoque et aggrave la sinusite. <br>Pour ce qu'il en est des <span class="red">symptômes</span> on a la 
+            congestion nasale, la fièvre, des douleurs au niveau des pommettes, des écoulements clairs des deux narines, parfois des 
+            maux de tête. Lorsque la maladie persiste longtemps, on observe une sensation caractéristique de pression ou de battement 
+            dans les sinus en particulier lorsque la personne se penche en avant la tête en bas ; de plus, il arrive que la personne qui 
+            souffre de sinusite ait une toux grasse (souvent pire la nuit), une mauvaise haleine, des difficultés à avaler et du mal à supporter 
+            la lumière vive. <br>Les personnes qui souffrent d'asthme ont un risque plus important de souffrir de sinusite, du fait d'une 
+            plus grande sensibilité de leur muqueuse respiratoire et de la présence fréquente de polypes de la muqueuse des sinus. En 
+            effet, les polypes qui peuvent provoquer une sinusite sont trois fois plus fréquents chez les personnes asthmatiques. 
+            <br><span class="red">Le traitement médical</span> propose <strong>des antibiotiques</strong> (en cas d'infection bactérienne),
+            <strong>des corticostéroïdes nasaux</strong> (pour réduire l'inflammation), <strong>des décongestionnants</strong> 
+            (pour soulager la congestion), <strong>des antihistaminiques</strong> (pour les sinusites liées aux allergies), 
+            <strong>un rinçage nasal avec des solutions salines</strong> pour nettoyer les voies nasales. Traitement chirurgical : si les
+            traitements médicaux échouent, une <em class="italique">intervention chirurgicale</em> peut être nécessaire pour drainer les
+            sinus ou corriger une anomalie structurelle.</p>
+            
+            <br><h2 id="hem" class="subtitle">9.Hémorroïdes</h2>
+            <a href="images/hemorroide.jpg"><img class="image" src="images/hemorroide_500x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a> 
+            <p>Les hémorroïdes sont des formations vasculaires physiologiques de l'anus, on distingue l'hémorroïde externe et interne.
+            Cette maladie se développe progressivement pour apparaître à l'âge adulte, <span class="red">les facteurs</span> favorisant 
+            leur survenue sont la constipation chronique, la diarrhée (irritation due à des selles fréquentes), une grossesse 
+            (augmentation de la pression abdominale), manque d'activité physique, facteurs génétiques. En effet, la constipation provoque
+            des effets de poussés à la selle, ce qui augmentent la pression sur les veines anales et entraînent la dilatation des vaisseaux 
+            et des crises hémorroîdaires. Cela a pour conséquence de renforcer la constipation et de créer un cercle vicieux, car ces deux 
+            problèmes sont étroitement liés.</p> 
+            <p>
+                <br><span class="red">Les symptômes</span> sont généralement une douleur intense au niveau de l'anus, présence de sang sur 
+                les selles, une grande difficulté à s'asseoir pendant longtemps, des douleurs aux reins et surtout des constipations exagérées. 
+                Afin d'éviter la constipation, il faut réduire la consommation des aliments comme les pâtes, le riz, les bananes, les carottes, 
+                les aliments riches en acides gras <strong>(car ils ralentissent le transit intestinal)</strong> : thon, marquero, sardine, 
+                huile de soja, huile de palme, viande rouge, le beurre, le fromage, le lait...    
+                <br><span class="red">Le traitement médical</span> fait appel à des conseils alimentaires simples comme par exemple éviter 
+                les excès alimentaires, les boissons alcoolisées, les excitants (thé, café, coca cola...), boire une grande quantité d'eau 
+                quotidiennement (au moins 2 litres par jour), faire des activités physiques, consommer des légumes verts, des fruits secs et 
+                frais, des céréales, aussi éviter les épices telles que le poivre, le piment, la moutarde et bien d'autres. 
+                <br><strong>L'hémorroïde a pour conséquence de provoquer des maladies telles que la maladie de Parkinson, les maladies 
+                neuromusculaires, la maladie de Charcot et bien d'autres.</strong>    
+            </p>
+            
+            <br><h2 id="her" class="subtitle">10.Hernie</h2>
+            <a href="images/hernies.jpg"><img class="image" src="images/hernies_400x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+            <p>Les hernies peuvent apparaître à tous les âges y compris chez le nouveau-né et touchent les deux sexes bien que plus 
+            fréquentes chez les hommes. Elles surviennent lorsque des organes ou des tissus internes poussent à travers une faiblesse 
+            ou une ouverture dans la paroi musculaire ou tissulaire qui les entoure normalement. On distingue plusieurs types d'hernies : 
+            <em class="italique">l'hernie inguinale, hiatale, ombilicale, fémorale et incisionnelle</em>. <span class="red">Les facteurs</span> 
+            favorisant leur apparition sont : <strong>la faiblesse des muscles</strong> (elle peut être congénitale ou acquise avec le temps), 
+            <strong>les efforts physiques</strong> (porter des objets lourds, une toux chronique, ou même un effort pour aller à la selle 
+            peut aggraver la pression abdominale), <strong>l'obésité</strong> (le surpoids met plus de pression sur la paroi abdominale), 
+            <strong>la grossesse</strong> (la grossesse peut affaiblir les muscles de l'abdomen). <br><span class="red">Les symptômes</span> 
+            se présentent comme une bosse visible dans la zone affectée, qui peut disparaître en position couchée ; une douleur ou gêne, 
+            surtout lors de la toux, de l'effort ou du port de charges. Dans les hernies hiatales, des symptômes comme des brûlures d'estomac 
+            ou des reflux gastriques peuvent être présents. <strong>Si la hernie n'est pas traitée, elle peut devenir étranglée, c'est-à-dire 
+            que le flux sanguin vers l'organe affecté est coupé.</strong> Cela peut entraîner une urgence médicale, nécessitant 
+            <em class="italique">une intervention chirurgicale immédiate</em>. Il faut savoir que l'hernie ombilicale chez les enfants, 
+            peuvent guérir d'elles-mêmes. Tandis que pour les autres hernies, une chirurgie est souvent recommandée.</p>
+            <p>Il est conseillé de consulter un médecin si l'ou soupçonne une hernie, car évaluation médicale est nécessaire pour déterminer
+            la gravité et le traitement approprié.
+            </p>
+        
+        
+            <br><h2 id="acn" class="subtitle">11.Acné</h2>
+            <p>L'acné est une affection cutanée courante qui survient lorsque les follicules pileux (pores de la peau) se bouchent avec 
+            du sébum (huile naturelle produite par la peau) et des cellules mortes. Cela entraîne la formation de boutons de points noirs, 
+            de kystes ou de nodules.</p>
+            <h3 class="red">Causes</h3>
+            <ol>
+                <li><strong>Surproduction de sébum</strong> : les glandes sébacées produisent trop de sébum, ce qui rend la peau grasse et bouche les pores.</li>
+                <li><strong>Accumulation de cellules mortes</strong> : les cellules mortes s'accumulent sur la peau, bloquant les pores.</li>
+                <li><strong>Bactéries</strong> : des bactéries appelées <em>Propionibacterium acné</em> peuvent se développer dans les pores obstrués, provoquant
+                une inflammation et des infections.</li>
+                <li><strong>Changements hormonaux</strong> : l'acné est souvent liée aux fluctuations hormonales, surtout pendant l'adolescence, la 
+                grossesse ou les cycles menstruels. Ces hormones stimulent les glandes sébacées à produire plus de sébum.</li>
+                <li><strong>Facteurs génétiques</strong> : l'acné peut être héréditaire.</li>
+                <li><strong>Alimentation</strong> : bien que le lien entre l'alimentaire et l'acné ne soit pas entièrement clair, certains aliments riches en
+                sucre ou en produits laitiers peuvent aggraver l'acné chez certaines personnes.</li>
+                <li><strong>Stress</strong> : le stress peut aggraver l'acné en déclenchant des poussées hormonales.</li>
+            </ol>
+            <a href="images/acne2.webp"><img class="image" src="images/acne2_300x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+            <h3 class="red">Facteurs aggravants</h3>
+            <ul>
+                <li><strong>Cosmétiques comédogènes</strong> : certains produits de soins de la peau ou de maquillage peuvent boucher les pores.</li>
+                <li><strong>Exposition à des produits chimiques</strong> : certains emplois ou environnements exposent la peau à des substances qui 
+                peuvent aggraver l'acné.</li>
+                <li><strong>Mauvaise hygiène</strong> : ne pas nettoyer la peau régulièrement peut favoriser l'accumulation de sébum et de cellules mortes.</li>
+                <li><strong>Toucher ou percer des boutons</strong> : cela peut propager les bactéries et entraîner plus d'inflammation et de cicatrices.</li>
+            </ul>
+            <h3 class="red">Traitements</h3>
+            <ul>
+                <li><strong>Produits en vente libre</strong> : les nettoyants, crèmes et gels contenant du peroxyde de benzoyle, de l'acide salicylique
+                ou du soufre peuvent aider à réduire les boutons.</li>
+                <li><strong>Médicaments topiques</strong> : les crèmes ou gels prescrits par les dermatologues, contenant des rétinoïdes ou des antibiotiques,
+                aident à déboucher les pores et à réduire les bactéries.</li>
+                <li><strong>Antibiotiques oraux</strong> : en cas d'acné modérée à sévère, des antibiotiques peuvent être prescrits pour combattre les
+                infections bactériennes.</li>
+                <li><strong>Traitements hormonaux</strong> : chez les femmes, des contraceptifs oraux ou des médicaments bloquant les hormones peuvent 
+                aider à réguler les poussées d'acné.</li>
+                <li><strong>Isotrétinoïde (Accutane)</strong> : un médicament puissant pour les formes sévères d'acné, mais qui nécessite un suivi strict
+                 en raison de ses effets secondaires potentiels.</li>
+                <li><strong>Thérapies physiques</strong> : les traitements au laser, la luminothérapie ou l'extraction manuelle des comédons peuvent aider.</li>
+            </ul>
+            <h3 class="red">Prévention</h3>
+            <ul>
+                <li>Nettoyer régulièrement la peau avec des produits non comédogènes.</li>
+                <li>Éviter de toucher le visage pour limiter la propagation des bactéries.</li>
+                <li>Hydrater la peau avec des produits adaptés à votre type de peau.</li>
+                <li>Adopter une alimentation équilibrée et réduire les aliments potentiellement déclencheurs, comme les produits
+                riches en sucre.</li>
+            </ul>
+            <p>L'acné peut avoir des effets sur la confiance en soi, surtout chez les adolescents. Il est important de traiter l'acné non
+            seulement pour la peau, mais aussi pour la santé mentale. En cas d'acné sévère ou persistante, il est conseillé de consulter
+            un dermatologue pour un traitement personnalisé.
+            </p>
+        
+        
+            <h2 id="alz" class="subtitle">12.Alzheimer</h2>
+            <p>La maladie d'Alzheimer est une maladie neurodégénérative progressive qui affecte le cerveau, entraînant une 
+            perte de mémoire, un déclin cognitif et des changements de personnalité. C'est la cause la plus courante de démence, en 
+            particuliers chez les personnes âgées.</p>
+            <img class="image" src="images/alzheimer1.avif" alt="image" style="float: right; margin: 0 0 0 10px;">
+            <h3 class="red">Caractéristiques principales</h3>
+            <ul>
+                <li><strong>Perte de mémoire</strong> : les premiers symptômes incluent souvent des difficultés à se souvenir des évènements récents, des
+                noms ou des conversations.</li>
+                <li><strong>Déclin cognitif</strong> : avec le temps, la maladie affecte la capacité à penser, à raisonner et à résoudre des problèmes.</li>
+                <li><strong>Changements de comportement</strong> : les personnes atteintes d'Alzheimer peuvent éprouver des sautes d'humeurs, de la 
+                dépression, de la confusion et de l'agitation.</li>
+                <li><strong>Problèmes de langage et de communication</strong> : des difficultés à trouver des mots ou à suivre une conversation sont fréquentes.</li>
+                <li><strong>Perte d'autonomie</strong> : À mesure que la maladie progresse, les individus peuvent avoir besoin d'aide pour les activités de la 
+                vie quotidienne, comme manger, s'habiller ou se laver.</li>
+            </ul> 
+            <h3 class="red">Causes</h3>
+            <p>Bien que la cause exacte de la maladie d'Alzheimer ne soit pas entièrement comprise, on pense qu'elle 
+            résulte d'une combinaison de facteurs génétiques, environnementaux et liés au mode vie qui affectent le cerveau au fil du
+            temps. Les facteurs clés incluent :</p>
+            <ul>
+                <li><strong>Plaques de bêta-amyloïde</strong> : accumulation anormale de fragments de protéines entre les neurones.</li>
+                <li><strong>Enchevêtrements neurofibrillaires</strong> : torsade de la protéine tau à l'intérieur des neurones, perturbant leur fonctionnement.</li>
+                <li><strong>Facteurs génétiques</strong></li>
+                <li><strong>Àge</strong> : le risque augmente considérablement après 65 ans.</li>
+            </ul>
+            <h3 class="red">Diagnostic</h3>
+            <p>Il n'existe pas de test unique pour diagnostiquer la maladie d'Alzheimer. Le diagnostic repose généralement
+            sur :</p>
+            <ul>
+                <li>L'évaluation des antécédents médicaux.</li>
+                <li>Des tests cognitifs pour évaluer la mémoire et la pensée.</li>
+                <li>Des examens d'imagerie célébrale pour détecter un rétrécissement ou des anomalies du cerveau.</li>
+                <li>Des analyses sanguines pour écarter d'autres causes des symptômes.</li>
+            </ul>
+            <a href="images/IRM_alzheimer.jpg"><img class="image" src="images/IRM_alzheimer_400x300.png" alt="image" style="float: right;
+            margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
+            <h3 class="red">Traitements</h3>
+            <p>Bien qu'il n'existe pas de remède, les traitements peuvent aider à gérer les symptômes :</p>
+            <ul>
+                <li><strong>Médicaments</strong> : des médicaments comme les inhibiteurs de la cholinestérase et la mémantine aident à améliorer
+                temporairement la mémoire et la cognition.</li>
+                <li><strong>Changements de mode de vie</strong> : une alimentation saine, de l'exercice régulier et des activités stimulantes pour le
+                cerveau peuvent ralentir le déclin cognitif.</li>
+                <li><strong>Soins de soutien</strong> : le soutien des aidants, les thérapies cognitives et les aides à la mémoire peuvent contribuer à 
+                maintenir la qualité de la vie.</li>
+            </ul>Des recherches sont en cours pour mieux comprendre les causes, la progression et les traitements potentiels de la maladie.
+    
         </div>
-        
-        <br><h2 id="mal_car">1.Les maladies cardiovasculaires</h2>
-        <p>Elles regroupent un ensemble de troubles qui affectent le coeur et les vaisseaux sanguins, constituant aujourd'hui 
-        l'une des principales causes de décès dans le monde.<strong> Selon les données de l'OMS, les maladies cardiovasculaires
-        sont responsables de près de 18 millions de décès chaque année. Soit environ 32% de l'ensemble des décès dans le monde, 
-        parmis ces décès environ 85% sont dus à des crises cardiaques et des accidents vasculaires célébraux (AVC)</strong>
-        <a href="images/avc.jpg"><img class="image" src="images/avc_400x300.png" alt="image" style="float: right; margin: 10px 0 0 10px;" 
-        title="Cliquer pour agrandir"></a>. 
-        Ce groupe de maladie comprend des affections telles que les crises cardiaques, les accidents vasculaires célébraux (AVC), 
-        l'hypertension, ainsi que des maladies des artères coronaires et les arythmies. <br><span class="red">Les facteurs de risques</span> 
-        souvent modifiables tels que le tabagisme, l'hypertension artérielle, l'obésité, le diabète, l'hypercholestérolémie, ainsi 
-        qu'un mode de vie, jouent un rôle dans le développement de ces pathologies. À cela s'ajoutent des prédispositions génétiques 
-        et l'âge. 
-        <br><span class="red">Les symptômes</span> des maladies cardiovasculaires varient selon la condition spécifique, 
-        mais peuvent inclure des douleurs thoraciques (angine de poitrine), une fatigue excessive, des étourdissements, ou des 
-        gonflements dans les membres inférieurs. Certains symptômes comme des douleurs soudaines et intenses à la poitrine, peuvent 
-        indiquer une urgence médicale, telle qu'une crise cardiaque.
-        <br><span class="red">Le traitement</span> des maladies cardiovasculaires dépend de leur nature et de leur gravité.</strong> Ils peuvent inclure des changements
-        de mode de vie, comme l'adoption d'une alimentation saine, l'arrêt du tabac et la pratique régulière d'exercice physique. Sur le 
-        plan médical, les traitements peuvent comprendre l'administration de médicaments pour contrôler la pression artérielle,
-        réduire le cholestérol pour prévenir la forme des caillots sanguins. Dans les cas plus graves, des interventions chirurgicales
-        peuvent être nécessaire. La gestion à long terme de ces maladies implique souvent un suivi médical régulier et, dans certains
-        cas, un programme de rééducation cardiaque. <a href="malcarvas.html">Pour plus d'infos détaillées.</a>
-        </p>
-    
-    
-        <br><h2 id="inf_res">2.Les infections respiratoires</h2>
-        <a href="images/infection_res2.webp"><img class="image" src="images/infection_res2_300x200.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
-        <p>Elles touchent les voies respiratoires (nez, gorge, bronches, poumons) et sont
-        <span class="red">causées</span> par des virus, des bactéries ou des champignons. <span class="red">Les symptômes</span> se présente avec un écoulement nasal, maux de gorge, toux,
-        essoufflement, fièvre élevée. <br><span class="red">Les traitements</span> consistent à soulager les symptômes avec des antipyrétiques (paracétamol),
-        des antitussifs, ou des décongestionnants. Les antibiotiques sont utilisés, mais uniquement après confirmation de l'origine bactériene
-        de l'infection pour éviter une utilisation excessive. On a aussi le repos, l'hydratation, l'inhalation de vapeur pour soulager
-        les symptômes respiratoires. <br><span class="red">La prévention</span> des infestions respiratoires passe par une bonne hygiène (lavage des mains), la
-        vaccination (contre la grippe, la COVID-19,etc), et l'évitement des facteurs de risques comme la fumée de cigarette.</p> 
-        
-        <br><h2 id="can">3.Les cancers</h2>
-        <a href="images/cancer.jpg"><img class="image" src="images/cancer_500x400.png" alt="image" style="float: left; margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
-        <p>Le cancer est une maladie où les cellules se développent de façon incontrôler, formant des tumeurs
-        et pouvant envahir d'autres parties du corps créant ainsi : le cancer du sein, le cancer de la prostate, du poumon, la
-        mélanome (cancer de la peau), la leucémie (cancer du sang), etc. <span class="red">Les causes</span> liées sont des facteurs génétiques (mutations héréditaires),
-        expositions environnementales (tabagisme, rayons UV), infections, mode de vie (alimentaires, exercices). Pour ce qu'il en est
-        <span class="red">des symptômes</span>, on a une fatigue, une perte de poids, des douleurs, des lésions  cutanées, des saignements anormaux. 
-        <span class="red">Les traitements</span> consistent à faire une chirurgie, une chimiothérapie, l'immunothérapie, une thérapie ciblée. 
-        <a href="cancers.html">Pour plus d'infos détaillées.</a></p>
-        
-        <br><h2 id="dia">4.Le diabète</h2>
-        <p>C'est une maladie chronique caractérisée par un taux élevé de sucre (glucose) dans le sang. Ce déséquilibre
-        résulte soit d'une production insuffisante d'insuline par le pancréas, soit d'une incapacité du corps à utiliser correctement
-        l'insuline produite. L'insuline est une hormone essentielle qui régule la quantité de glucose dans le sang en facilitant son
-        absorption par les cellules pour produire de l'énergie. Il existe plusieurs types de diabète, mais les deux principaux sont
-        le diabète de type 1 et le diabète de type 2 :</p>
-        <a href="images/diabete.jpg"><img class="image" src="images/diabete_400x300.png" alt="image" style="float: left; margin: 10px 10px 0 0;" title="Cliquer pour agrandir"></a>
-        <p>
-            <br><span class="red">Le diabète de type 1 </span>: le système immunitaire détruit les cellules productrices
-            d'insuline. Ce type de diabète, souvent diagnostiqué chez les jeunes, nécessite un traitement par injection d'insuline à vie.
-            Le diabète est caractérisé par une émission d'urine excessive entrainant une soif intense, un appétit anormalement
-            augmenté, un amaigrissement malgrès une prise de nourriture abondante, une fatigue, une perte de poids, des troubles
-            de vision.
-            <br><span class="red">Le diabète de type 2</span> : le plus courant, il résulte d'une résistance à l'insuline souvent liée à des habitudes de vie comme
-            une mauvaise alimentation et  un manque d'exercice. Il peut être géré par des médicaments et des changements de mode de vie.
-            <br><strong>Le diabète mal contrôler peut entraîner des complications graves</strong> telles que les maladies cardiovasculaires, les lésions nerveuses
-            et rénales, ainsi que des problèmes de cicatrisation. <span class="red">La prévention et la gestion</span> passe par une alimentation équilibrée, l'exercice
-            physique régulier et, si nécessaire la prise de médicaments ou d'insuline. <span class="red">Un diagnostique</span> précoce et une bonne gestion permettent
-            de vivre une vie saine  malgré la maladie.
-        </p>    
+    </main>
 
-
-        <br><h2 id="mal_inf">5.Les maladies infectieuses</h2>
-        <img class="image" src="images/mal_inf.png" alt="image" style="float: right; margin: 0 0 0 10px;">
-        <p>On peut citer : grippe, VIH/SIDA, COVID-19... Elles sont <span class="red">causées</span> par des micro-organismes comme les bactéries, les virus, les champignons
-        ou les parasites. Les maladies infectieuses se transmettent par l'air, le contact physique, les fluides corporels, l'eau ou la 
-        nourriture contaminée. Pour la <span class="red">prévention</span>, on a les vaccinations, le lavage des mains, la désinfection, l'utilisation de moustiquaire 
-        ou des insecticides. Le traitement inclut antibiotiques, antiviraux, et antifongiques. La prévention reste la clé pour
-        limiter ces maladies. <a href="malinf.html">Pour plus d'infos détaillées.</a></p>
-    
-        
-        <br><h2 id="com_neo">6.Les complications néonatales et les infections chez les nouveau-nés</h2>
-        <img class="image" src="images/inf_neana.png" alt="image" style="float: right; margin: 0 0 0 10px;">
-        <p><span class="red">Complications néonatales</span> : problèmes respiratoires et neurologiques dus à une naissance avant 37 semaines 
-        (<strong>prématurité</strong>) ; coincement des épaules pendant l'accouchement (<strong>dyctocie des épaules</strong>), 
-        entraînant des lésions nerveuses ; privatisation d'oxygène (<strong>asphyxie néonatale</strong>) pouvant provoquer des
-        dommages célébraux ; anomalies détectées à la naissance comme des malformations cardiaques ; excès de bilirubine causant la
-        jaunisse, parfois nécessitant une photothérapie.</p> 
-        <p><span class="red">Infections néonatales</span> : on a une infection 
-        précoce dans les 72 premières heures souvent causées par des bactéries, et une infection tardive, après 72 heures souvent 
-        causées par des bactéries ou des champignons. Comme prévention et gestion, il faut essentiellement des soins prénatales, un 
-        accouchement sécurisé, une hygiène rigoureuse et un traitement précoce des infections réduisant les risques.
-        </p> 
-        
-        
-        <br><h2 id="tro_dig">7.Les troubles digestifs</h2>
-        <a href="images/trouble_diges.png"><img class="image" src="images/trouble_diges_280x300.png" alt="image" style="float: left; margin: 0 10px
-        0 0;" title="Cliquer pour agrandir"></a>
-        <p>Les troubles digestifs incluent divers problèmes affectant le système digestif : retour acide de l'estomac vers 
-        l'oesophage, provoquant des brûlures d'estomac ; douleurs abdominales et trouble de transit <strong>(syndrome de 
-        l'intestin irritable)</strong> ; inflammation chronique comme <em class="italique">la maladie de Crohn</em> ou 
-        <em class="italique">la colite ulcéreuse</em> ; plaies ouvertes dans l'estomac ou le duodénum <strong>(ulcères gastriques)</strong>, 
-        souvent <span class="red">causées</span> par les infections ou les AINS ; inflammation du pancréas souvent due à
-        l'alcool ou aux calculs biliaires <strong>(pancréatite)</strong> ; inflammation du foie causée par des infections virales, 
-        l'alcool ou des toxines <strong>(hépatite)</strong> ; difficulté à avoir des selles régulières <strong>(constipation)</strong> 
-        souvent due à un manque de fibre ou à un mode de vie sédentaire ; selles fréquentes et liquides causées par des infections 
-        ou des troubles <strong>(diarrhée)</strong>. <br>Comme <span class="red">prévention</span> et gestion, il faut 
-        une alimentation équilibrée, l'hydratation, et faire une consultation médicale pour une gestion efficace des symptômes.</p>
-    
-        
-        <br><h2 id="sin">8.Sinusite</h2>
-        <a href="images/sinus.gif"><img class="image" src="images/sinus_270x300.png" alt="image" style="float: left; margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
-        <p>La sinusite est une inflammation de sinus, des cavités osseuses (au nombre de 4) du visage et du crâne, le plus souvent 
-        c'est une complication aiguë des <em class="italique">rhinopharyngites ou des rhinites allergiques</em>, parfois des abcès 
-        dentaires. Cette maladie peut être <span class="red">provoquée par</span> des virus, des bactéries ou champignons, la 
-        poussière ou poils d'animaux (peuvent enflammer les sinus), la présence de polypes, la pollution, la fumée de cigarette, 
-        l'exposition du visage à des vapeurs irritantes ou les produits chimiques (peuvent irriter les sinus). La présence de 
-        carries dentaires provoque et aggrave la sinusite. <br>Pour ce qu'il en est des <span class="red">symptômes</span> on a la 
-        congestion nasale, la fièvre, des douleurs au niveau des pommettes, des écoulements clairs des deux narines, parfois des 
-        maux de tête. Lorsque la maladie persiste longtemps, on observe une sensation caractéristique de pression ou de battement 
-        dans les sinus en particulier lorsque la personne se penche en avant la tête en bas ; de plus, il arrive que la personne qui 
-        souffre de sinusite ait une toux grasse (souvent pire la nuit), une mauvaise haleine, des difficultés à avaler et du mal à supporter 
-        la lumière vive. <br>Les personnes qui souffrent d'asthme ont un risque plus important de souffrir de sinusite, du fait d'une 
-        plus grande sensibilité de leur muqueuse respiratoire et de la présence fréquente de polypes de la muqueuse des sinus. En 
-        effet, les polypes qui peuvent provoquer une sinusite sont trois fois plus fréquents chez les personnes asthmatiques. 
-        <br><span class="red">Le traitement médical</span> propose <strong>des antibiotiques</strong> (en cas d'infection bactérienne),
-        <strong>des corticostéroïdes nasaux</strong> (pour réduire l'inflammation), <strong>des décongestionnants</strong> 
-        (pour soulager la congestion), <strong>des antihistaminiques</strong> (pour les sinusites liées aux allergies), 
-        <strong>un rinçage nasal avec des solutions salines</strong> pour nettoyer les voies nasales. Traitement chirurgical : si les
-        traitements médicaux échouent, une <em class="italique">intervention chirurgicale</em> peut être nécessaire pour drainer les
-        sinus ou corriger une anomalie structurelle.</p>
-        
-        <br><h2 id="hem">9.Hémorroïdes</h2>
-        <a href="images/hemorroide.jpg"><img class="image" src="images/hemorroide_500x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a> 
-        <p>Les hémorroïdes sont des formations vasculaires physiologiques de l'anus, on distingue l'hémorroïde externe et interne.
-        Cette maladie se développe progressivement pour apparaître à l'âge adulte, <span class="red">les facteurs</span> favorisant 
-        leur survenue sont la constipation chronique, la diarrhée (irritation due à des selles fréquentes), une grossesse 
-        (augmentation de la pression abdominale), manque d'activité physique, facteurs génétiques. En effet, la constipation provoque
-        des effets de poussés à la selle, ce qui augmentent la pression sur les veines anales et entraînent la dilatation des vaisseaux 
-        et des crises hémorroîdaires. Cela a pour conséquence de renforcer la constipation et de créer un cercle vicieux, car ces deux 
-        problèmes sont étroitement liés.</p> 
-        <p>
-            <br><span class="red">Les symptômes</span> sont généralement une douleur intense au niveau de l'anus, présence de sang sur 
-            les selles, une grande difficulté à s'asseoir pendant longtemps, des douleurs aux reins et surtout des constipations exagérées. 
-            Afin d'éviter la constipation, il faut réduire la consommation des aliments comme les pâtes, le riz, les bananes, les carottes, 
-            les aliments riches en acides gras <strong>(car ils ralentissent le transit intestinal)</strong> : thon, marquero, sardine, 
-            huile de soja, huile de palme, viande rouge, le beurre, le fromage, le lait...    
-            <br><span class="red">Le traitement médical</span> fait appel à des conseils alimentaires simples comme par exemple éviter 
-            les excès alimentaires, les boissons alcoolisées, les excitants (thé, café, coca cola...), boire une grande quantité d'eau 
-            quotidiennement (au moins 2 litres par jour), faire des activités physiques, consommer des légumes verts, des fruits secs et 
-            frais, des céréales, aussi éviter les épices telles que le poivre, le piment, la moutarde et bien d'autres. 
-            <br><strong>L'hémorroïde a pour conséquence de provoquer des maladies telles que la maladie de Parkinson, les maladies 
-            neuromusculaires, la maladie de Charcot et bien d'autres.</strong>    
-        </p>
-        
-        <br><h2 id="her">10.Hernie</h2>
-        <a href="images/hernies.jpg"><img class="image" src="images/hernies_400x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
-        <p>Les hernies peuvent apparaître à tous les âges y compris chez le nouveau-né et touchent les deux sexes bien que plus 
-        fréquentes chez les hommes. Elles surviennent lorsque des organes ou des tissus internes poussent à travers une faiblesse 
-        ou une ouverture dans la paroi musculaire ou tissulaire qui les entoure normalement. On distingue plusieurs types d'hernies : 
-        <em class="italique">l'hernie inguinale, hiatale, ombilicale, fémorale et incisionnelle</em>. <span class="red">Les facteurs</span> 
-        favorisant leur apparition sont : <strong>la faiblesse des muscles</strong> (elle peut être congénitale ou acquise avec le temps), 
-        <strong>les efforts physiques</strong> (porter des objets lourds, une toux chronique, ou même un effort pour aller à la selle 
-        peut aggraver la pression abdominale), <strong>l'obésité</strong> (le surpoids met plus de pression sur la paroi abdominale), 
-        <strong>la grossesse</strong> (la grossesse peut affaiblir les muscles de l'abdomen). <br><span class="red">Les symptômes</span> 
-        se présentent comme une bosse visible dans la zone affectée, qui peut disparaître en position couchée ; une douleur ou gêne, 
-        surtout lors de la toux, de l'effort ou du port de charges. Dans les hernies hiatales, des symptômes comme des brûlures d'estomac 
-        ou des reflux gastriques peuvent être présents. <strong>Si la hernie n'est pas traitée, elle peut devenir étranglée, c'est-à-dire 
-        que le flux sanguin vers l'organe affecté est coupé.</strong> Cela peut entraîner une urgence médicale, nécessitant 
-        <em class="italique">une intervention chirurgicale immédiate</em>. Il faut savoir que l'hernie ombilicale chez les enfants, 
-        peuvent guérir d'elles-mêmes. Tandis que pour les autres hernies, une chirurgie est souvent recommandée.</p>
-        <p>Il est conseillé de consulter un médecin si l'ou soupçonne une hernie, car évaluation médicale est nécessaire pour déterminer
-        la gravité et le traitement approprié.
-        </p>
-    
-    
-        <br><h2 id="acn">11.Acné</h2>
-        <p>L'acné est une affection cutanée courante qui survient lorsque les follicules pileux (pores de la peau) se bouchent avec 
-        du sébum (huile naturelle produite par la peau) et des cellules mortes. Cela entraîne la formation de boutons de points noirs, 
-        de kystes ou de nodules.</p>
-        <h3>Causes</h3>
-        <ol>
-            <li><strong>Surproduction de sébum</strong> : les glandes sébacées produisent trop de sébum, ce qui rend la peau grasse et bouche les pores.</li>
-            <li><strong>Accumulation de cellules mortes</strong> : les cellules mortes s'accumulent sur la peau, bloquant les pores.</li>
-            <li><strong>Bactéries</strong> : des bactéries appelées <em>Propionibacterium acné</em> peuvent se développer dans les pores obstrués, provoquant
-            une inflammation et des infections.</li>
-            <li><strong>Changements hormonaux</strong> : l'acné est souvent liée aux fluctuations hormonales, surtout pendant l'adolescence, la 
-            grossesse ou les cycles menstruels. Ces hormones stimulent les glandes sébacées à produire plus de sébum.</li>
-            <li><strong>Facteurs génétiques</strong> : l'acné peut être héréditaire.</li>
-            <li><strong>Alimentation</strong> : bien que le lien entre l'alimentaire et l'acné ne soit pas entièrement clair, certains aliments riches en
-            sucre ou en produits laitiers peuvent aggraver l'acné chez certaines personnes.</li>
-            <li><strong>Sress</strong> : le stress peut aggraver l'acné en déclenchant des poussées hormonales.</li>
-        </ol>
-        <a href="images/acne2.webp"><img class="image" src="images/acne2_300x300.png" alt="image" style="float: right; margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
-        <h3>Facteurs aggravants</h3>
-        <ul>
-            <li><strong>Cosmétiques comédogènes</strong> : certains produits de soins de la peau ou de maquillage peuvent boucher les pores.</li>
-            <li><strong>Exposition à des produits chimiques</strong> : certains emplois ou environnements exposent la peau à des substances qui 
-            peuvent aggraver l'acné.</li>
-            <li><strong>Mauvaise hygiène</strong> : ne pas nettoyer la peau régulièrement peut favoriser l'accumulation de sébum et de cellules mortes.</li>
-            <li><strong>Toucher ou percer des boutons</strong> : cela peut propager les bactéries et entraîner plus d'inflammation et de cicatrices.</li>
-        </ul>
-        <h3>Traitements</h3>
-        <ul>
-            <li><strong>Produits en vente libre</strong> : les nettoyants, crèmes et gels contenant du peroxyde de benzoyle, de l'acide salicylique
-            ou du soufre peuvent aider à réduire les boutons.</li>
-            <li><strong>Médicaments topiques</strong> : les crèmes ou gels prescrits par les dermatologues, contenant des rétinoïdes ou des antibiotiques,
-            aident à déboucher les pores et à réduire les bactéries.</li>
-            <li><strong>Antibiotiques oraux</strong> : en cas d'acné modérée à sévère, des antibiotiques peuvent être prescrits pour combattre les
-            infections bactériennes.</li>
-            <li><strong>Traitements hormonaux</strong> : chez les femmes, des contraceptifs oraux ou des médicaments bloquant les hormones peuvent 
-            aider à réguler les poussées d'acné.</li>
-            <li><strong>Isotrétinoïde (Accutane)</strong> : un médicament puissant pour les formes sévères d'acné, mais qui nécessite un suivi strict
-             en raison de ses effets secondaires potentiels.</li>
-            <li><strong>Thérapies physiques</strong> : les traitements au laser, la luminothérapie ou l'extraction manuelle des comédons peuvent aider.</li>
-        </ul>
-        <h3>Prévention</h3>
-        <ul>
-            <li>Nettoyer régulièrement la peau avec des produits non comédogènes.</li>
-            <li>Éviter de toucher le visage pour limiter la propagation des bactéries.</li>
-            <li>Hydrater la peau avec des produits adaptés à votre type de peau.</li>
-            <li>Adopter une alimentation équilibrée et réduire les aliments potentiellement déclencheurs, comme les produits
-            riches en sucre.</li>
-        </ul>
-        <p>L'acné peut avoir des effets sur la confiance en soi, surtout chez les adolescents. Il est important de traiter l'acné non
-        seulement pour la peau, mais aussi pour la santé mentale. En cas d'acné sévère ou persistante, il est conseillé de consulter
-        un dermatologue pour un traitement personnalisé.
-        </p>
-    
-    
-        <h2 id="alz">12.Alzheimer</h2>
-        <p>La maladie d'Alzheimer est une maladie neurodégénérative progressive qui affecte le cerveau, entraînant une 
-        perte de mémoire, un déclin cognitif et des changements de personnalité. C'est la cause la plus courante de démence, en 
-        particuliers chez les personnes âgées.</p>
-        <img class="image" src="images/alzheimer1.avif" alt="image" style="float: right; margin: 0 0 0 10px;">
-        <h3>Caractéristiques principales</h3>
-        <ul>
-            <li><strong>Perte de mémoire</strong> : les premiers symptômes incluent souvent des difficultés à se souvenir des évènements récents, des
-            noms ou des conversations.</li>
-            <li><strong>Déclin cognitif</strong> : avec le temps, la maladie affecte la capacité à penser, à raisonner et à résoudre des problèmes.</li>
-            <li><strong>Changements de comportement</strong> : les personnes atteintes d'Alzheimer peuvent éprouver des sautes d'humeurs, de la 
-            dépression, de la confusion et de l'agitation.</li>
-            <li><strong>Problèmes de langage et de communication</strong> : des difficultés à trouver des mots ou à suivre une conversation sont fréquentes.</li>
-            <li><strong>Perte d'autonomie</strong> : À mesure que la maladie progresse, les individus peuvent avoir besoin d'aide pour les activités de la 
-            vie quotidienne, comme manger, s'habiller ou se laver.</li>
-        </ul> 
-        <h3>Causes</h3>
-        <p>Bien que la cause exacte de la maladie d'Alzheimer ne soit pas entièrement comprise, on pense qu'elle 
-        résulte d'une combinaison de facteurs génétiques, environnementaux et liés au mode vie qui affectent le cerveau au fil du
-        temps. Les facteurs clés incluent :</p>
-        <ul>
-            <li><strong>Plaques de bêta-amyloïde</strong> : accumulation anormale de fragments de protéines entre les neurones.</li>
-            <li><strong>Enchevêtrements neurofibrillaires</strong> : torsade de la protéine tau à l'intérieur des neurones, perturbant leur fonctionnement.</li>
-            <li><strong>Facteurs génétiques</strong></li>
-            <li><strong>Àge</strong> : le risque augmente considérablement après 65 ans.</li>
-        </ul>
-        <h3>Diagnostic</h3>
-        <p>Il n'existe pas de test unique pour diagnostiquer la maladie d'Alzheimer. Le diagnostic repose généralement
-        sur :</p>
-        <ul>
-            <li>L'évaluation des antécédents médicaux.</li>
-            <li>Des tests cognitifs pour évaluer la mémoire et la pensée.</li>
-            <li>Des examens d'imagerie célébrale pour détecter un rétrécissement ou des anomalies du cerveau.</li>
-            <li>Des analyses sanguines pour écarter d'autres causes des symptômes.</li>
-        </ul>
-        <a href="images/IRM_alzheimer.jpg"><img class="image" src="images/IRM_alzheimer_400x300.png" alt="image" style="float: right;
-        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
-        <h3>Traitements</h3>
-        <p>Bien qu'il n'existe pas de remède, les traitements peuvent aider à gérer les symptômes :</p>
-        <ul>
-            <li><strong>Médicaments</strong> : des médicaments comme les inhibiteurs de la cholinestérase et la mémantine aident à améliorer
-            temporairement la mémoire et la cognition.</li>
-            <li><strong>Changements de mode de vie</strong> : une alimentation saine, de l'exercice régulier et des activités stimulantes pour le
-            cerveau peuvent ralentir le déclin cognitif.</li>
-            <li><strong>Soins de soutien</strong> : le soutien des aidants, les thérapies cognitives et les aides à la mémoire peuvent contribuer à 
-            maintenir la qualité de la vie.</li>
-        </ul>Des recherches sont en cours pour mieux comprendre les causes, la progression et les traitements potentiels de la maladie.
-
-    </div>
     <div class="footers">
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

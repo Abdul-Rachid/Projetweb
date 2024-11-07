@@ -1,9 +1,287 @@
 
 html {
-    margin: 16px;
+    background-color: #fff;
+    font-size: 100%;
+
 }
+
+body {
+    direction: ltr;
+    text-align: justify;
+    line-height: 1.5;
+    word-break: normal;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.display_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.accueil {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Style pour un ordinateur portable */
+@media (max-width: 2000px) {
+    body {
+        font-size: 1rem;
+    }
+    .image {
+        width: 20%;
+    }
+    .vector_header_start {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    .menu_label {
+        width: 35%;
+    }
+    .humberger{
+        width: 100%;
+    }
+    .vector_menu_content {
+        width: 20%;
+        margin-left: 150px;
+    }
+    .image_logo {
+        width: 45%;
+        padding-left: 0.5em;
+    }
+    .logo_text  {
+        width: 150%;
+        font-size: 200%;
+        font-weight: 700;
+        padding-left: 0.2em;
+    }
+}
+
+/* Style pour les tablettes */
+@media (max-width: 950px) {
+    body {
+        font-size: 1rem;
+    }
+    .image {
+        width: 28%;
+    }
+    .vector_header_start {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+    .menu_label {
+        width: 40%;
+    }
+    .humberger{
+        width: 100%;
+    }
+    .vector_menu_content {
+        width: 20%;
+        margin-left: 80px;
+    }
+    .logo_text  {
+        width: 150%;
+        font-size: 190%;
+        font-weight: 600;
+        padding-left: 0.2em;
+    }
+    
+}   
+@media (max-width: 850px) {
+    .menu_label {
+        width:50%;
+    }
+}
+
+/* Style pour les smartphones */
+@media (max-width: 500px) {
+    body {
+        font-size: 0.875rem;
+    }
+    .image {
+        width: 40%;
+    }
+    .vector_header_start {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .display_header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_label {
+        width:80%;
+    }
+    .humberger{
+        width: 100%;
+    }
+    .vector_menu_content {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .image_logo {
+        width: 30%;
+    }
+    .logo_text  {
+        width: 90%;
+        font-size: 180%;
+        font-weight: 600;
+        padding-left: 0.2em;
+    }
+    .accueil {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 300px) {
+    .menu_label {
+        width:100%;
+    }
+}
+
+
+/* Style sur le corps textuel */
+.vector_body_container {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* Style sur l'entête */
+.vector_header_container {
+    width: 100%;
+    display: grid;
+    background-color:#e5e8e8;
+}
+/* Style sur mw-header */
+.vector_header_container .mw_header {
+    margin: 10px;
+    box-sizing: border-box;
+}
+.dropdown_menu {
+    width: 10%;
+    position: relative;
+}
+.vector_dropdown {
+    width: 94%;
+}
+
+
+/* Style sur le menu principal */
+.vector_dropdown_checkbox {
+    cursor: pointer;
+    display: none;
+}
+
+.menu_label {
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 0.3em;
+    text-decoration: none;
+}
+/* Changement de couleur au survol du label */
+.menu_label:hover {
+    background-color: #b8b1b1;
+}
+
+.vector_menu_content {
+    visibility: visible;
+    height: auto;
+    overflow: hidden auto;
+    background-color: #b7b6bd;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px -1px rgba(0,0,0,10);
+}
+
+.vector_menu_content_list {
+    list-style: none;
+    padding: 10px;
+    display: none;
+    line-height: 1.6;
+    width: max-content;
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* Afficher la liste du menu si la checkbox est cochée */
+#menu-toggle:checked + .menu_label + .vector_menu_content .vector_menu_content_list {
+    display: block;
+}
+.menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+/* Style sur les liens du menu principal */
+.vector_menu_content .mw-list-item a {
+    color: black;
+    text-decoration: none;
+
+}
+/* Changement de couleur au survol des liens du menu principal */
+.vector_menu_content .mw-list-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-decoration-color: red;
+}
+
+/* Style sur mw-logo */
+.mw_logo {
+    display: flex;
+    align-items: center;
+}
+.logo_text {
+    color: #574791;
+    text-align: center;
+}
+
+
+.accueil {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.accueil:hover {
+    text-decoration: underline;
+}
+
+
+.title°1 {
+    border: 3px solid #efc7c7;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+}
+
 
 /* Style pour la couleur des "causes",... */
 .red {
     color: red;
+}
+
+/* Style pour les liens */
+.links {
+    text-decoration: none;
+}
+
+.italique {
+    color:rgb(14, 148, 12);
+}
+
+/* Style pour pieds de la page */
+.footers {
+    background-color: #e5e8e8;
+    height: 15rem;
 }

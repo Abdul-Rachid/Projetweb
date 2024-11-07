@@ -8,19 +8,61 @@
     <title>en savoir plus sur les cancers</title>
 </head>
 <body>
-    <div>
-        <h1>LES CANCERS</h1>
+    <div class="vector_header_container">
+        <header class="vector_header mw_header">
+            <div id="header_start" class="vector_header_start">
+                <nav id="dropdown_menu" class="dropdown_menu" aria-label="Site">
+                    <div class="vector_dropdown">
+                        <input  id="menu-toggle" role="button" type="checkbox" aria-haspopup="true" 
+                        aria-expanded="false" aria-controls="menu_items" class="vector_dropdown_checkbox" aria-label="Menu principal">
+                        <label id="menu_button" class="menu_label" for="menu-toggle" aria-haspopup="true" aria-hidden="true">
+                            <img class="humberger" src="images/menu_lateral_44x44.png" alt="menu-lateral">
+                        </label>
+                        <div id="menu_content" class="vector_menu_content" >
+                            <ul id="menu_items" class="vector_menu_content_list" role="menu" aria-hidden="true">
+                                <li role="menuitem" class="mw-list-item"><a href="#sein">cancer du sein</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#poumon">poumon</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#prostate">prostate</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#peau">peau</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#sang">sang</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#utérus">l'utérus</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#côlon">côlon</a></li>
+                                <li role="menuitem" class="mw-list-item"><a href="#foie">foie</a></li>
+                            </ul>
+                        </div>
+                        <div id="menu_overlay" class="menu_overlay">
+    
+                        </div>
+                    </div>
+                </nav>
+                <div class="display_header">
+                    <div id="mw_logo" class="mw_logo">
+                        <img class="image_logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
+                        <span class="logo_text">Santé PLUS</span>
+                        <img class="image_logo" src="images/icon_50x50.png" alt="Logo" aria-hidden="true" height="50" width="50">
+                    </div>
+                    <div class="accueil_container">
+                        <a class="accueil" href="index.html">Accueil</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div id="body_container"  class="vector_body_container">
+        <h1 class="title°1">LES CANCERS</h1> 
         <p>Le cancer est une maladie caractérisée par une croissance cellulaire anormale et incontrôlée. Normalement,
-        les cellules corps suivent un cycle de croissance, de division et de mort programmée (apoptose). Dans le cas du cancer, ce 
+        les cellules du corps suivent un cycle de croissance, de division et de mort programmée (apoptose). Dans le cas du cancer, ce 
         processus est pertubé. Les cellules cancéreuses continuent de croître et de se diviser sans contrôle, formant des tumeurs, et
-        peuvent envahir d'autres parties du corps (métastase). Il existe plusieurs cancers, à savoir <a href="#sein">le cancer du sein</a>, 
-        du <a href="#poumon">poumon</a>, de la <a href="#prostate">prostate</a>, de la <a href="#peau">peau</a>,
-        du <a href="#sang">sang</a>, de <a href="#utérus">l'utérus</a>, du <a href="#côlon">côlon</a>, du <a href="#foie">foie</a>...
+        peuvent envahir d'autres parties du corps (métastase). Il existe plus de 100 types de cancers différent, affectant divers
+        organes et systèmes. Ceux les plus répandu sont le <a class="links" href="#sein">cancer du sein</a>, 
+        du <a class="links" href="#poumon">poumon</a>, de la <a class="links" href="#prostate">prostate</a>, de la <a class="links" href="#peau">peau</a>,
+        du <a class="links" href="#sang">sang</a>, de <a class="links" href="#utérus">l'utérus</a>, du <a class="links" href="#côlon">côlon</a>, du <a class="links" href="#foie">foie</a>...
         </p>
             
         <h2 id="sein">1.Cancer du sein</h2>
-        <p><a href="images/cancer_sein.png"><img src="images/cancer_sein_533x300.png" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 18rem; height: 10rem;" title="Cliquer pour agrandir"></a>
+        <p><a href="images/cancer_sein.png"><img class="image" src="images/cancer_sein_533x300.png" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
         <span class="red">Mécanisme</span> : il se développe dans les cellules du sein : les cellules des glandes mammaires ou des
         canneaux lactifères commencent à se diviser de manière incontrôlée en raison de mutations génétiques, formant une tumeur.
         Ces cellules peuvent envahir les tissus environnants et se propager aux gamglions lymphatiques ou à d'autres parties du
@@ -31,8 +73,8 @@
 
         
         <h2 id="poumon">2.Cancer du poumon</h2>
-        <a href="images/cancer_poumon.webp"><img src="images/cancer_poumon_400x300.jpg" alt="image" style="float: left;
-        margin: 0 10px 10px 0; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>
+        <a href="images/cancer_poumon.webp"><img class="image" src="images/cancer_poumon_400x300.jpg" alt="image" style="float: left;
+        margin: 0 10px 0 0;" title="Cliquer pour agrandir"></a>
         <p>
         <span class="red">Mécanisme</span> : les cellules des poumons, souvent celles tapissant les bronches, généralement en réponse
         à des agents cancérigènes comme la fumée de cigarette. Ces cellules anormales se multiplient et forment des tumeurs qui obstruent
@@ -43,8 +85,8 @@
 
 
         <h2 id="prostate">3.Cancer de la prostate</h2>
-        <a href="images/cancer_prostate.webp"><img src="images/cancer_prostate_400x300.png" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>
+        <a href="images/cancer_prostate.webp"><img class="image" src="images/cancer_prostate_400x300.png" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
         <p>
         <span class="red">Mécanisme</span> : les cellues glandulaires de la prostate se divise de façon anormale, souvent en
         réponse à des déséquilibres hormonaux. La croissance de la tumeur peut comprimer l'urète et envahir les structures voisines
@@ -55,8 +97,8 @@
         
         
         <h2 id="peau">4.Cancer de la peau (Mélanome)</h2>
-        <a href="images/cancer_peau.jpeg"><img src="images/cancer_peau_400x300.jpg" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>
+        <a href="images/cancer_peau.jpeg"><img class="image" src="images/cancer_peau_400x300.jpg" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
         <p><span class="red">Mécanisme</span> : les cellules productrices de pigments de la peau (mélanocytes) deviennent cancéreuses
             principalement en réponse à des dommages causés par des rayons UV. Ces cellules se multiplient de manière anarchique,
             formant des tumeurs qui peuvent envahir des couches plus profondes de la peau et se propager à d'autres parties du corps.
@@ -66,8 +108,8 @@
         </p>
         
         <h2 id="sang">5.Cancer du sang (Leucénie)</h2>
-        <a href="images/cancer-du-sang.jpg"><img src="images/cancer-du-sang_500x300.png" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>
+        <a href="images/cancer-du-sang.jpg"><img class="image" src="images/cancer-du-sang_500x300.png" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
         <p><span class="red">Mécanisme</span> : la leucénie affecte principalement la moelle osseuse, où les cellules souches
         sanguines se développent en globules blancs anormaux. Ces cellules cancéreuses, incapables de fonctionner normalement, se
         multiplient rapidement et envahissent le sang, ce qui réduire la capacité du sang à combattre les infections et à transporter
@@ -78,34 +120,36 @@
         
         
         <h2 id="utérus">6.Cancer de l'utérus</h2>
+        <a href="images/cancer_col_uterus.webp"><img class="image" src="images/cancer_col_uterus_450x300.png" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>
         <p>Le cancer de l'utérus se développe généralement dans l'endomètre, la muqueuse interne de l'utérus. On parle alors de 
         <strong>cancer de l'endomètre</strong>, qui est la forme la plus courante de ce cancer.
         </p>
-        <a href="images/cancer_col_uterus.webp"><img src="images/cancer_col_uterus_450x300.png" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>
-        <ul>
-            <li><span class="red">Causes ou facteurs de risque</span> :</li>
+        <div>
             <ul>
-                <li>l'âge (plus fréquent chez les femmes après 50 ans)</li>
-                <li>antécédents de cancer (sein, ovaire ou colon)</li>
-                <li>obésité</li>
-                <li>hyperplasie de l'endomètre (croissance excessive de l'endomètre)</li>
-                <li>traitements hormonaux sans progestérone</li>
-                <li>diabète</li>
-                <li>facteurs génétiques (comme le syndrome de Lynch)</li>
+                <li><span class="red">Causes ou facteurs de risque</span> :</li>
+                <ul>
+                    <li>l'âge (plus fréquent chez les femmes après 50 ans)</li>
+                    <li>antécédents de cancer (sein, ovaire ou colon)</li>
+                    <li>obésité</li>
+                    <li>hyperplasie de l'endomètre (croissance excessive de l'endomètre)</li>
+                    <li>traitements hormonaux sans progestérone</li>
+                    <li>diabète</li>
+                    <li>facteurs génétiques (comme le syndrome de Lynch)</li>
+                </ul>
+                <li><span class="red">Symptômes</span> :</li>
+                <ul>
+                    <li>saignements vaginaux anormaux (surtour après la ménopause)</li>
+                    <li>douleur pelvienne</li>
+                    <li>perte de poids inexpliquée</li>
+                    <li>difficultés ou douleurs lors de la miction ou des rapports sexuels</li>
+                </ul>
+                <li><span class="red">Diagnostic</span> :</li>il se fait souvent par échographie pelvienne, biopsie de l'endomètre, hystéroscopie,
+                ou  IRM.
+                <li><span class="red">Traitement</span> :</li>chirurgie (hystérectomie), radiothérapie, chimiothérapie, ou hormonothérapie, 
+                selon l'étendue de la maladie.
             </ul>
-            <li><span class="red">Symptômes</span> :</li>
-            <ul>
-                <li>saignements vaginaux anormaux (surtour après la ménopause)</li>
-                <li>douleur pelvienne</li>
-                <li>perte de poids inexpliquée</li>
-                <li>difficultés ou douleurs lors de la miction ou des rapports sexuels</li>
-            </ul>
-            <li><span class="red">Diagnostic</span> :</li>il se fait souvent par échographie pelvienne, biopsie de l'endomètre, hystéroscopie,
-            ou  IRM.
-            <li><span class="red">Traitement</span> :</li>chirurgie (hystérectomie), radiothérapie, chimiothérapie, ou hormonothérapie, 
-            selon l'étendue de la maladie.
-        </ul>
+        </div>
     
     
         <h2 id="côlon">7.Cancer du côlon</h2>
@@ -118,9 +162,9 @@
                 <li>âge (plus fréquent après 50 ans)</li>
                 <li>régime alimentaire riche en graisses et en viande rouge</li>
                 <li>antécédents familiaux de cancer colorectal</li>
-                <a href="images/cancer-du-colon.jpeg"><img src="images/cancer-du-colon_400x200.jpg" alt="image" style="float: right;
-                margin: 0 0 10px 10px; width: 18rem; height: 14rem;" title="Cliquer pour agrandir"></a>                
-                <li>maladies inflammatoires chroniques de l'intestin (comme la maladie de <em>Crohn ou la colite ulcéreuse</em>)</li>
+                <a href="images/cancer-du-colon.jpeg"><img class="image" src="images/cancer-du-colon_400x200.jpg" alt="image" style="float: right;
+                margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>                
+                <li>maladies inflammatoires chroniques de l'intestin (comme la maladie de <em class="italique">Crohn ou la colite ulcéreuse</em>)</li>
                 <li>tabagisme et alcoolisme</li>
                 <li>sédentarité</li>
             </ul>
@@ -141,8 +185,8 @@
         <p>Le cancer du foie peut être <strong>primaire</strong> (lorsqu'il commence dans le fois, comme dans le cas de 
         l'hépatocarcinome) ou <strong>secondaire</strong> (lorsqu'il provient d'autres organes et propage au foie).
         </p>
-        <a href="images/cancer_fois.jpg"><img src="images/cancer_fois_400x300.jpg" alt="image" style="float: right;
-        margin: 0 0 10px 10px; width: 24rem; height: 20rem;" title="Cliquer pour agrandir"></a>    
+        <a href="images/cancer_fois.jpg"><img class="image" src="images/cancer_fois_400x300.jpg" alt="image" style="float: right;
+        margin: 0 0 0 10px;" title="Cliquer pour agrandir"></a>    
         <ul>
             <li><span class="red">Causes ou facteurs de risque</span> :</li>
             <ul>
@@ -175,7 +219,41 @@
         des éléments clés dans la lutte contre le cancer.
         </p>
     </div>
+    <div class="footers"></div>
 
-    
+    <script>
+        // Transparence en arrière plan lorsque le menu est affiché
+        const checkbox = document.getElementById('menu-toggle');
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                menu_overlay.style.display = 'block';
+                menu_overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.74)';
+            }
+            else {
+                // menu_overlay.style.display = 'none';
+            }
+        });
+
+        // Fermer l'overlay et le menu déroulant lorsqu'on clique hors du bouton avec une fonction qui décoche la case à cocher
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuButton = document.getElementById('menu_button');
+        const menuItems = document.getElementById('menu_items');
+        function closeMenu(event) {
+            if (! menuItems.contains(event.target) && ! menuButton.contains(event.target) && ! menuToggle.contains(event.target)) {
+                menuToggle.checked = false;
+                menu_overlay.style.display = 'none';
+            }
+        } 
+        document.addEventListener ('click', closeMenu);// Ajout d'événement
+
+        menuItems.querySelectorAll('li a').forEach(item => {
+            item.addEventListener('click', function() {
+                menuToggle.checked = false;
+                menu_overlay.style.display = 'none';
+            });
+        });
+
+
+    </script>
 </body>
 </html>

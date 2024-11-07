@@ -1,0 +1,191 @@
+
+html {
+    background-color: #fff;
+    font-size: 100%;
+}
+body {
+    direction: ltr;
+    text-align: justify;
+    line-height: 1.5;
+    word-break: normal;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.vector_header_start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.accueil {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Style pour un ordinateur portable */
+@media (max-width: 2000px) {
+    body {
+        font-size: 1rem;
+    }
+    .image {
+        width: 20%;
+    }
+    .image_block .image {    /* Style pour le site 'maladies infectieuses' */
+        width: 20%;
+    }
+    .vector_header_start {
+        margin: 10px;
+    }
+    .imag_logo {
+        width: 45%;
+        padding-left: 0.5em;
+    }
+    .logo_text  {
+        width: 150%;
+        font-size: 200%;
+        font-weight: 700;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }    
+}
+
+/* Style pour les tablettes */
+@media (max-width: 950px) {
+    body {
+        font-size: 1rem;
+    }
+    .image {
+        width: 26%;
+    }
+    .image_block .image {    /* Style pour le site 'maladies infectieuses' */
+        width: 26%;
+    }
+    .vector_header_start {
+        margin: 5px;
+    }
+    .logo_text  {
+        width: 150%;
+        font-size: 190%;
+        font-weight: 600;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .image {
+        width: 37%;
+    }
+    .image_block .image {    /* Style pour le site 'maladies infectieuses' */
+        width: 37%;
+    }
+}
+
+
+/* Style pour le site 'maladies infectieuses' */
+@media (max-width: 700px) {
+    .image_block .image {
+        width: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .image_block .image {
+        width: 45%;
+    }
+}
+
+
+/* Style pour un smartphone */
+@media (max-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
+    .image {
+        width: 50%;
+    }
+    .image_block .image {    /* Style pour le site 'maladies infectieuses' */
+        width: 50%;
+    }
+    .vector_header_start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .image_logo {
+        width: 30%;
+    }
+    .logo_text  {
+        width: 90%;
+        font-size: 180%;
+        font-weight: 600;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+    .accueil {
+        font-size: 1.2em;
+    }
+}
+
+
+.vector_header_container {
+    width: 100%;
+    display: grid;
+    background-color:#e5e8e8;
+}
+
+.mw_logo {
+    display: flex;
+    align-items: center;
+}
+.logo_text {
+    color: #574791;
+}
+
+/* Style sur mw_header */
+.vector_header_container .mw_header {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.accueil {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.accueil:hover {
+    text-decoration: underline;
+}
+
+.vector_body_container {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+
+.red {
+    color: #dc4242;
+}
+
+.blue_color {
+    color: #4f4f71;
+}
+
+.title°1 {
+    border: 3px solid #efc7c7;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Style pour pieds de la page */
+.footers {
+    background-color: #e5e8e8;
+    height: 15rem;
+}
+
